@@ -1,0 +1,1515 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Muizon Automobiles | Voitures d'occasion garanties à Muizon, près de Reims</title>
+<meta name="description" content="Muizon Automobiles, 31 Route Nationale à Muizon (51140). Véhicules d'occasion toutes marques vendus avec garantie, reprise, dépôt-vente et atelier d'entretien, à une dizaine de kilomètres de Reims.">
+<meta name="theme-color" content="#0C1118">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Muizon Automobiles | Voitures d'occasion garanties à Muizon">
+<meta property="og:description" content="Vente de véhicules d'occasion, reprise, dépôt-vente et atelier d'entretien sur la Nationale 31, près de Reims.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23F4F1E8'/%3E%3Crect x='5' y='5' width='54' height='54' rx='8' fill='none' stroke='%23D21F26' stroke-width='6'/%3E%3Ctext x='32' y='44' font-family='Arial Narrow,Arial,sans-serif' font-weight='700' font-size='32' text-anchor='middle' fill='%2310151C'%3EM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js');</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoDealer",
+  "name": "Muizon Automobiles",
+  "legalName": "MUIZON AUTOMOBILES SAS",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "31 Route Nationale",
+    "postalCode": "51140",
+    "addressLocality": "Muizon",
+    "addressRegion": "Grand Est",
+    "addressCountry": "FR"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 49.2747, "longitude": 3.8917 },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "13:00", "closes": "19:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "09:00", "closes": "18:00" }
+  ],
+  "areaServed": ["Muizon", "Reims", "Tinqueux", "Gueux", "Jonchery-sur-Vesle", "Fismes"]
+}
+</script>
+
+<style>
+/* ------------------------------------------------------------------
+   Jetons
+   Une seule famille, Archivo, jouée sur sa largeur :
+   large pour les titres, normale pour le texte, étroite pour les chiffres.
+   Jaune = affichette de prix sur pare-brise. Rouge = liseré du panneau.
+------------------------------------------------------------------- */
+:root{
+  --nuit:#0C1118;
+  --nuit-2:#141B25;
+  --nuit-3:#1F2834;
+  --craie:#F2F3F0;
+  --blanc:#FFFFFF;
+  --encre:#10151C;
+  --gris:#5E6875;
+  --trait:#D9DCD6;
+  --rouge:#D21F26;
+  --rouge-fonce:#A9161C;
+  --jaune:#FFD21F;
+  --panneau:#F4F1E8;
+
+  --font:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --gutter:clamp(18px,4.4vw,64px);
+  --max:1400px;
+  --r:10px;
+  --ease:cubic-bezier(.2,.7,.1,1);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+html.intro-on{overflow:hidden}
+body{
+  margin:0;background:var(--craie);color:var(--encre);
+  font-family:var(--font);font-size:17px;line-height:1.55;font-stretch:100%;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+}
+body.is-locked{overflow:hidden}
+img,canvas,iframe,svg{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3,h4,p,ul,dl,dd,figure{margin:0}
+ul{padding:0;list-style:none}
+button,input,select,textarea{font:inherit;color:inherit}
+button{background:none;border:0;padding:0;cursor:pointer}
+:focus-visible{outline:3px solid var(--jaune);outline-offset:3px;border-radius:3px}
+[hidden]{display:none !important}
+section[id],#demande{scroll-margin-top:74px}
+.wrap{max-width:var(--max);margin-inline:auto;padding-inline:var(--gutter)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:absolute;left:12px;top:-60px;background:var(--jaune);color:var(--encre);padding:10px 14px;z-index:300;font-weight:600;text-decoration:none}
+.skip:focus{top:12px}
+
+/* Titres : Archivo large */
+.t-xl,.t-l,.t-m{font-stretch:120%;font-weight:700;letter-spacing:-.028em;line-height:1;text-wrap:balance}
+.t-xl{font-size:clamp(2.3rem,5.5vw,5.3rem);line-height:.97}
+.t-l{font-size:clamp(1.9rem,3.7vw,3.4rem)}
+.t-m{font-size:clamp(1.3rem,1.9vw,1.75rem);letter-spacing:-.02em;line-height:1.08}
+.lede{font-size:clamp(1.02rem,1.2vw,1.16rem);color:var(--gris);max-width:36em}
+.on-dark .lede{color:#B4BCC7}
+
+/* Logo : panneau d'entrée d'agglomération */
+.sign{
+  display:inline-block;background:var(--panneau);color:var(--encre);
+  font-stretch:68%;font-weight:800;text-transform:uppercase;letter-spacing:.05em;line-height:1;
+  padding:.3em .6em .26em;border:.15em solid var(--rouge);border-radius:.2em;
+  box-shadow:0 0 0 .07em var(--panneau);
+}
+.logo{display:inline-flex;align-items:center;gap:.75em;text-decoration:none}
+.logo .sign{font-size:15px}
+.logo-word{font-stretch:118%;font-weight:600;font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;line-height:1}
+
+/* Affichette de prix */
+.prix{
+  display:inline-flex;align-items:baseline;gap:.16em;background:var(--jaune);color:#111;
+  font-stretch:72%;font-weight:800;font-size:2rem;line-height:1;letter-spacing:.005em;font-variant-numeric:tabular-nums;
+  padding:.3em .46em .25em;border-radius:5px;transform:rotate(-2.5deg);
+  box-shadow:0 8px 18px rgba(12,17,24,.28);white-space:nowrap;
+}
+.prix small{font-size:.56em;font-weight:700}
+
+/* Boutons */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.6em;
+  min-height:52px;padding:0 26px;border-radius:999px;text-decoration:none;
+  font-weight:600;font-size:16px;white-space:nowrap;border:1.5px solid transparent;
+  transition:background-color .2s,color .2s,border-color .2s;
+}
+.btn svg{width:18px;height:18px;flex:none}
+.btn--rouge{background:var(--rouge);color:#fff}
+.btn--rouge:hover{background:var(--rouge-fonce)}
+.btn--blanc{background:#fff;color:var(--encre)}
+.btn--blanc:hover{background:var(--jaune)}
+.btn--clair{border-color:rgba(255,255,255,.5);color:#fff}
+.btn--clair:hover{background:#fff;color:var(--encre);border-color:#fff}
+.btn--encre{border-color:var(--encre);color:var(--encre)}
+.btn--encre:hover{background:var(--encre);color:#fff}
+.btn--plein{background:var(--encre);color:#fff}
+.btn--plein:hover{background:#000}
+.btn--s{min-height:44px;padding:0 18px;font-size:15px}
+
+/* ------------------------------------------------------------------
+   Animation d'accueil : arrivée de nuit sur la N31
+------------------------------------------------------------------- */
+.intro{position:fixed;inset:0;z-index:200;background:#07090C;display:none;overflow:hidden}
+html.js.intro-on .intro{display:block}
+.intro.is-leaving{opacity:0;transition:opacity .8s ease}
+.intro canvas{position:absolute;inset:0;width:100%;height:100%}
+.intro-sign{
+  position:absolute;left:50%;top:44%;transform:translate(-50%,-50%) scale(.02);
+  transform-origin:50% 50%;opacity:0;text-align:center;will-change:transform,opacity;
+}
+.intro-sign .sign{font-size:clamp(3.4rem,13vw,9.5rem)}
+.intro-word{
+  display:block;margin-top:1.1em;color:#fff;
+  font-stretch:122%;font-weight:600;font-size:clamp(.95rem,2.3vw,1.9rem);letter-spacing:.42em;text-indent:.42em;text-transform:uppercase;line-height:1;
+  opacity:0;transform:translateY(.5em);transition:opacity .5s ease,transform .7s var(--ease);
+}
+.intro.is-arrived .intro-word{opacity:1;transform:none}
+.borne{
+  position:absolute;left:var(--gutter);bottom:calc(28px + env(safe-area-inset-bottom));
+  width:112px;border-radius:56px 56px 4px 4px;overflow:hidden;background:var(--panneau);color:var(--encre);
+  font-stretch:70%;text-align:center;box-shadow:0 18px 40px rgba(0,0,0,.5);
+}
+.borne-cap{background:var(--rouge);color:#fff;font-weight:800;font-size:22px;letter-spacing:.04em;padding:20px 0 8px;line-height:1}
+.borne-body{padding:10px 6px 14px;line-height:1.05}
+.borne-city{display:block;font-size:16px;font-weight:700;text-transform:uppercase;letter-spacing:.05em}
+.borne-km{display:block;font-size:30px;font-weight:800;font-variant-numeric:tabular-nums}
+.intro-skip{
+  position:absolute;right:var(--gutter);bottom:calc(30px + env(safe-area-inset-bottom));
+  color:#9AA4B0;font-size:15px;text-decoration:underline;text-underline-offset:4px;padding:10px 0;
+}
+.intro-skip:hover{color:#fff}
+
+/* ------------------------------------------------------------------
+   En-tête
+------------------------------------------------------------------- */
+.top{position:fixed;inset:0 0 auto 0;z-index:100;color:#fff;transition:background-color .3s,box-shadow .3s}
+.top.is-stuck{background:rgba(12,17,24,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(255,255,255,.08)}
+.top-in{display:flex;align-items:center;justify-content:space-between;gap:24px;height:74px}
+.nav{display:flex;align-items:center;gap:clamp(16px,2.2vw,34px)}
+.nav a{font-size:15.5px;font-weight:500;text-decoration:none;opacity:.86;padding:8px 0;border-bottom:2px solid transparent;transition:opacity .2s,border-color .2s}
+.nav a:hover{opacity:1;border-color:var(--jaune)}
+.top-cta{display:flex;align-items:center;gap:12px}
+.burger{display:none;width:44px;height:44px;align-items:center;justify-content:center}
+.burger span,.burger span::before,.burger span::after{display:block;width:24px;height:2px;background:#fff;position:relative;transition:transform .25s,background-color .25s}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0}
+.burger span::before{top:-8px}.burger span::after{top:8px}
+.burger[aria-expanded="true"] span{background:transparent}
+.burger[aria-expanded="true"] span::before{transform:translateY(8px) rotate(45deg)}
+.burger[aria-expanded="true"] span::after{transform:translateY(-8px) rotate(-45deg)}
+.menu{position:fixed;inset:0;z-index:90;background:var(--nuit);color:#fff;padding:104px var(--gutter) 40px;display:flex;flex-direction:column;overflow:auto}
+.menu a:not(.btn){font-stretch:118%;font-weight:700;font-size:1.9rem;letter-spacing:-.02em;line-height:1.2;text-decoration:none;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+.menu .btn{margin-top:28px}
+
+/* ------------------------------------------------------------------
+   Hero : la voiture à la une, en pleine page
+------------------------------------------------------------------- */
+.hero{position:relative;min-height:max(100svh,700px);display:flex;flex-direction:column;justify-content:flex-end;color:#fff;background:var(--nuit);overflow:hidden}
+.hero-media{position:absolute;inset:0}
+.hero-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1s ease}
+.hero-media img.is-on{opacity:1}
+.hero::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:
+    linear-gradient(180deg,rgba(12,17,24,.62) 0%,rgba(12,17,24,0) 22%),
+    linear-gradient(0deg,rgba(12,17,24,.96) 0%,rgba(12,17,24,.72) 30%,rgba(12,17,24,.12) 62%,rgba(12,17,24,0) 78%);
+}
+.hero-in{position:relative;z-index:2;width:100%;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:end;gap:clamp(24px,4vw,64px);padding-block:150px clamp(26px,4vh,44px)}
+.hero h1{max-width:12.5em;font-size:clamp(2.2rem,4.7vw,4.6rem)}
+.hero-sub{margin-top:clamp(16px,2.4vh,26px);max-width:34em;font-size:clamp(1.02rem,1.25vw,1.18rem);color:#DDE2E8}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:clamp(22px,3.4vh,34px)}
+
+.une{width:min(370px,100%);background:rgba(12,17,24,.66);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.16);border-radius:16px;padding:20px 22px 20px}
+.une-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}
+.une-label{font-size:14px;font-weight:600;color:var(--jaune)}
+.une-nav{display:flex;align-items:center;gap:8px;font-stretch:75%;font-weight:600;font-size:16px;font-variant-numeric:tabular-nums;color:#C6CDD6}
+.une-nav button{width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,255,255,.3);display:inline-flex;align-items:center;justify-content:center;color:#fff;transition:background-color .2s,color .2s}
+.une-nav button:hover{background:#fff;color:var(--encre)}
+.une-nav svg{width:16px;height:16px}
+.une-brand{font-size:14.5px;font-weight:600;color:#B4BCC7}
+.une-model{margin-top:2px}
+.une-specs{margin-top:8px;font-stretch:80%;font-weight:500;font-size:17px;color:#DDE2E8}
+.une-foot{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-top:18px}
+.une .prix{font-size:1.75rem}
+
+.hero-facts{position:relative;z-index:2;border-top:1px solid rgba(255,255,255,.16)}
+.hero-facts ul{display:flex;flex-wrap:wrap}
+.hero-facts li{padding:16px 30px 18px 0;margin-right:30px;border-right:1px solid rgba(255,255,255,.16);font-size:15.5px;color:#C6CDD6}
+.hero-facts li:last-child{border-right:0;margin-right:0;padding-right:0}
+.hero-facts strong{font-weight:700;color:#fff}
+.status{display:inline-flex;align-items:center;gap:.55em}
+.status::before{content:"";width:9px;height:9px;border-radius:50%;background:#8A94A1;flex:none}
+.status.is-open::before{background:#3DDC84;box-shadow:0 0 0 4px rgba(61,220,132,.2)}
+
+html.js:not(.ready) .hero-copy,html.js:not(.ready) .une,html.js:not(.ready) .hero-facts{opacity:0;transform:translateY(24px)}
+.hero-copy,.une,.hero-facts{transition:opacity .9s ease,transform 1.1s var(--ease)}
+.une{transition-delay:.18s}.hero-facts{transition-delay:.3s}
+
+/* ------------------------------------------------------------------
+   Bandes
+------------------------------------------------------------------- */
+.band{padding-block:clamp(64px,8.5vw,128px)}
+.band--nuit{background:var(--nuit);color:#fff}
+.band--blanc{background:var(--blanc)}
+.band-head{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:20px 60px;margin-bottom:clamp(28px,3.6vw,52px)}
+.band-head .t-l{max-width:17em}
+
+/* ------------------------------------------------------------------
+   Catalogue
+------------------------------------------------------------------- */
+.tools{display:grid;grid-template-columns:minmax(220px,1.5fr) repeat(5,minmax(0,1fr));gap:10px;margin-bottom:16px}
+.field-box{position:relative;display:block}
+.field-box > span{position:absolute;left:16px;top:9px;font-size:12.5px;font-weight:500;color:var(--gris);pointer-events:none}
+.field-box input,.field-box select{
+  width:100%;height:60px;padding:24px 16px 6px;background:var(--blanc);border:1px solid var(--trait);border-radius:var(--r);
+  font-weight:600;font-size:16px;appearance:none;-webkit-appearance:none;transition:border-color .2s;
+}
+.field-box select{padding-right:38px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2310151C' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;background-size:16px;cursor:pointer;text-overflow:ellipsis}
+.field-box input::placeholder{color:#9AA2AD;font-weight:400}
+.field-box input:hover,.field-box select:hover{border-color:#9AA2AD}
+.field-box input:focus,.field-box select:focus{outline:3px solid var(--jaune);outline-offset:1px;border-color:var(--encre)}
+
+.tools-2{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px 24px;margin-bottom:clamp(22px,2.6vw,34px)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{min-height:44px;padding:0 18px;border:1px solid var(--trait);background:var(--blanc);border-radius:999px;font-size:15px;font-weight:600;display:inline-flex;align-items:center;gap:.45em;transition:background-color .2s,color .2s,border-color .2s}
+.chip:hover{border-color:var(--encre)}
+.chip[aria-pressed="true"]{background:var(--encre);border-color:var(--encre);color:#fff}
+.chip small{font-stretch:75%;font-size:14px;font-weight:600;opacity:.55}
+.chip svg{width:16px;height:16px}
+.chip--fav[aria-pressed="true"]{background:var(--rouge);border-color:var(--rouge)}
+.count{font-size:15.5px;color:var(--gris)}
+.count strong{color:var(--encre);font-weight:700}
+.count button{margin-left:12px;font-weight:600;color:var(--encre);text-decoration:underline;text-underline-offset:4px}
+
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(30px,3.2vw,48px) clamp(16px,2vw,28px)}
+.card{position:relative;display:flex;flex-direction:column;min-width:0}
+.card-link{display:flex;flex-direction:column;flex:1;text-decoration:none;color:inherit}
+.card-media{position:relative}
+.card-photo{position:relative;aspect-ratio:4/3;border-radius:var(--r);overflow:hidden;background:#D5D9D3}
+.card-photo img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.card-link:hover .card-photo img{transform:scale(1.045)}
+.card-photo.no-img::after{content:attr(data-fallback);position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-stretch:120%;font-weight:700;font-size:1.3rem;color:#8C948A}
+.card-tags{position:absolute;left:12px;top:12px;display:flex;flex-wrap:wrap;gap:6px;max-width:calc(100% - 70px)}
+.tag{background:rgba(255,255,255,.94);color:var(--encre);font-size:13px;font-weight:600;line-height:1;padding:7px 10px 6px;border-radius:999px}
+.tag--nuit{background:var(--nuit);color:#fff}
+.card .prix{position:absolute;left:14px;bottom:-14px;z-index:2}
+.card-body{padding:28px 2px 0}
+.card-brand{font-size:14px;font-weight:600;color:var(--gris)}
+.card-model{margin-top:1px}
+.card-version{margin-top:4px;font-size:15px;color:var(--gris);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.specs{display:flex;flex-wrap:wrap;margin-top:12px;font-stretch:80%;font-weight:600;font-size:16.5px;font-variant-numeric:tabular-nums}
+.specs li{padding-right:12px;margin-right:12px;border-right:1px solid var(--trait)}
+.specs li:last-child{border-right:0;margin-right:0;padding-right:0}
+.fav{
+  position:absolute;right:12px;top:12px;z-index:3;width:44px;height:44px;border-radius:50%;
+  background:rgba(255,255,255,.94);display:inline-flex;align-items:center;justify-content:center;color:var(--encre);
+  transition:transform .2s,background-color .2s,color .2s;
+}
+.fav:hover{transform:scale(1.08)}
+.fav svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2}
+.fav[aria-pressed="true"]{background:var(--rouge);color:#fff}
+.fav[aria-pressed="true"] svg{fill:currentColor}
+
+/* La première fiche prend deux colonnes et deux rangées */
+.card--big{grid-column:span 2;grid-row:span 2}
+.card--big .card-media{flex:1;display:flex}
+.card--big .card-photo{aspect-ratio:auto;flex:1;min-height:420px}
+.card--big .prix{font-size:2.6rem;left:22px;bottom:-18px}
+.card--big .card-body{padding-top:34px}
+.card--big .t-m{font-size:clamp(1.6rem,2.6vw,2.4rem)}
+.card--big .card-version{font-size:16.5px}
+
+.empty{grid-column:1/-1;padding:56px 0;text-align:center;color:var(--gris)}
+.empty .t-m{color:var(--encre);margin-bottom:8px}
+.empty .btn{margin-top:20px}
+.more{display:flex;justify-content:center;margin-top:clamp(36px,4vw,56px)}
+.cat-foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 30px;margin-top:clamp(36px,4vw,56px);padding-top:24px;border-top:1px solid var(--trait);font-size:15px;color:var(--gris)}
+.cat-foot p{max-width:44em}
+.cat-links{display:flex;flex-wrap:wrap;gap:8px 22px}
+.cat-links a{font-weight:600;color:var(--encre);text-underline-offset:4px}
+
+/* ------------------------------------------------------------------
+   Fiche véhicule
+------------------------------------------------------------------- */
+.fiche{width:min(1200px,calc(100vw - 32px));max-height:calc(100svh - 32px);padding:0;border:0;border-radius:18px;background:var(--blanc);color:var(--encre);overflow:hidden}
+.fiche:focus{outline:none}
+.fiche::backdrop{background:rgba(12,17,24,.78);backdrop-filter:blur(4px)}
+.fiche[open]{display:flex;flex-direction:column;animation:ficheIn .35s var(--ease)}
+@keyframes ficheIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.fiche-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 14px 12px 22px;border-bottom:1px solid var(--trait);flex:none}
+.fiche-bar p{font-size:14.5px;color:var(--gris)}
+.fiche-bar div{display:flex;gap:8px}
+.round{width:44px;height:44px;border-radius:50%;border:1px solid var(--trait);display:inline-flex;align-items:center;justify-content:center;transition:background-color .2s,color .2s,border-color .2s}
+.round:hover{background:var(--encre);border-color:var(--encre);color:#fff}
+.round svg{width:18px;height:18px}
+.fiche-body{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);overflow:auto;flex:1}
+.gal{padding:20px;display:flex;flex-direction:column;gap:10px;background:var(--craie)}
+.gal-main{position:relative;aspect-ratio:3/2;border-radius:var(--r);overflow:hidden;background:#D5D9D3}
+.gal-main img{width:100%;height:100%;object-fit:cover}
+.gal-thumbs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.gal-thumbs button{aspect-ratio:4/3;border-radius:7px;overflow:hidden;opacity:.6;outline-offset:2px;transition:opacity .2s}
+.gal-thumbs button:hover{opacity:1}
+.gal-thumbs button[aria-pressed="true"]{opacity:1;box-shadow:0 0 0 3px var(--encre)}
+.gal-thumbs img{width:100%;height:100%;object-fit:cover}
+.gal-note{font-size:13.5px;color:var(--gris);margin-top:2px}
+.info{padding:clamp(22px,2.6vw,36px);display:flex;flex-direction:column}
+.info-brand{font-size:15px;font-weight:600;color:var(--gris)}
+.info h2{margin-top:2px;font-size:clamp(1.7rem,2.7vw,2.5rem)}
+.info-version{margin-top:8px;color:var(--gris)}
+.info .prix{align-self:flex-start;font-size:2.5rem;margin:22px 0 6px}
+.info-warranty{font-size:14.5px;color:var(--gris);margin-top:8px}
+.info dl{display:grid;grid-template-columns:1fr 1fr;gap:0 24px;margin-top:22px;border-top:1px solid var(--trait)}
+.info dl div{padding:12px 0;border-bottom:1px solid var(--trait)}
+.info dt{font-size:13.5px;color:var(--gris)}
+.info dd{font-stretch:82%;font-weight:600;font-size:19px;font-variant-numeric:tabular-nums}
+.info h3{font-size:15px;font-weight:700;margin:22px 0 10px}
+.equip{display:flex;flex-wrap:wrap;gap:6px}
+.equip li{font-size:14.5px;font-weight:500;background:var(--craie);border-radius:999px;padding:7px 12px 6px;line-height:1.2}
+.info-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.info-actions .btn{flex:1 1 auto}
+.info-links{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:16px;font-size:15px}
+.info-links a,.info-links button{font-weight:600;text-decoration:underline;text-underline-offset:4px}
+
+/* ------------------------------------------------------------------
+   Services
+------------------------------------------------------------------- */
+.panels{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(12px,1.6vw,22px)}
+.panel{position:relative;aspect-ratio:4/5;border-radius:14px;overflow:hidden;display:flex;align-items:flex-end;color:#fff;background:var(--nuit-2)}
+.panel img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.panel::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(12,17,24,.94) 0%,rgba(12,17,24,.6) 38%,rgba(12,17,24,0) 70%)}
+.panel-in{position:relative;z-index:1;padding:clamp(20px,2.2vw,32px)}
+.panel p{margin-top:10px;color:#D6DBE2;font-size:16px}
+.panel a{display:inline-block;margin-top:14px;font-weight:600;text-decoration:underline;text-underline-offset:5px;text-decoration-color:var(--jaune);text-decoration-thickness:2px}
+.assur{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 clamp(24px,4vw,70px);margin-top:clamp(28px,3.4vw,48px);border-top:1px solid rgba(255,255,255,.16)}
+.assur div{padding-top:24px}
+.assur p{margin-top:8px;color:#B4BCC7;max-width:34em}
+
+/* ------------------------------------------------------------------
+   Instagram
+------------------------------------------------------------------- */
+.ig-handle{font-stretch:82%;font-weight:600;font-size:20px;color:var(--gris);margin-top:10px}
+.ig-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px}
+.ig-tile{position:relative;aspect-ratio:1;overflow:hidden;border-radius:8px;background:#D5D9D3;display:block}
+.ig-tile img{width:100%;height:100%;object-fit:cover;transition:transform .7s var(--ease)}
+.ig-tile:hover img{transform:scale(1.06)}
+.ig-tile span{position:absolute;inset:auto 0 0 0;padding:30px 12px 10px;font-size:14px;font-weight:600;color:#fff;background:linear-gradient(0deg,rgba(12,17,24,.85),rgba(12,17,24,0));opacity:0;transition:opacity .25s}
+.ig-tile:hover span,.ig-tile:focus-visible span{opacity:1}
+
+/* ------------------------------------------------------------------
+   Venir
+------------------------------------------------------------------- */
+.visit{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:clamp(28px,4.5vw,72px);align-items:stretch}
+.visit address{font-style:normal;margin-bottom:12px}
+.visit-status{color:#B4BCC7;margin-bottom:26px}
+.hours{width:100%;border-collapse:collapse;margin-bottom:30px}
+.hours th,.hours td{padding:12px 0;border-bottom:1px solid rgba(255,255,255,.14);text-align:left;font-weight:400;color:#DDE2E8}
+.hours td{text-align:right;font-stretch:80%;font-size:19px;font-weight:600;font-variant-numeric:tabular-nums;color:#fff}
+.hours tr.is-today th{font-weight:700;color:#fff}
+.hours tr.is-today th::after{content:"Aujourd'hui";margin-left:10px;font-size:12.5px;font-weight:700;background:var(--jaune);color:#111;border-radius:999px;padding:3px 9px 2px}
+.hours .closed{color:#8A94A1}
+.visit-actions{display:flex;flex-wrap:wrap;gap:10px}
+.map{min-height:460px;height:100%;background:var(--nuit-2);border-radius:14px;overflow:hidden}
+.map iframe{width:100%;height:100%;min-height:460px;border:0}
+
+/* ------------------------------------------------------------------
+   Demande
+------------------------------------------------------------------- */
+.ask{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:clamp(28px,4.5vw,72px)}
+.ask .lede{margin-top:16px}
+.form{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.field{display:flex;flex-direction:column;gap:6px}
+.field--full{grid-column:1/-1}
+.field label{font-size:14.5px;font-weight:600}
+.field input,.field select,.field textarea{background:var(--craie);border:1px solid var(--trait);border-radius:var(--r);padding:13px 14px;min-height:52px;width:100%}
+.field textarea{min-height:130px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:3px solid var(--jaune);outline-offset:1px;border-color:var(--encre)}
+.form .btn{justify-self:start}
+.form-note{grid-column:1/-1;font-size:15px;min-height:1.5em}
+.form-note.is-ok{color:#17693B;font-weight:600}
+.form-note.is-err{color:var(--rouge-fonce);font-weight:600}
+
+/* ------------------------------------------------------------------
+   Pied
+------------------------------------------------------------------- */
+.foot{background:var(--nuit);color:#B4BCC7;padding-block:54px calc(38px + env(safe-area-inset-bottom));font-size:15px}
+.foot-in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:30px}
+.foot .logo{color:#fff;margin-bottom:16px}
+.foot ul{display:flex;flex-wrap:wrap;gap:8px 26px}
+.foot ul a,.foot ul button{color:#DDE2E8;text-decoration:underline;text-underline-offset:4px;text-decoration-color:rgba(255,255,255,.3)}
+.foot ul a:hover,.foot ul button:hover{text-decoration-color:var(--jaune)}
+.foot-legal{margin-top:36px;padding-top:20px;border-top:1px solid rgba(255,255,255,.12);font-size:13.5px;color:#8A94A1}
+.legal{max-width:min(620px,92vw);border:0;border-radius:14px;padding:30px;background:#fff;color:var(--encre);font-size:15.5px}
+.legal::backdrop{background:rgba(12,17,24,.75)}
+.legal h2{font-size:1.6rem;margin-bottom:16px}
+.legal p{margin-bottom:10px}
+.legal .btn{margin-top:12px}
+
+.mbar{display:none}
+
+/* ------------------------------------------------------------------
+   Adaptatif
+------------------------------------------------------------------- */
+@media (max-width:1180px){
+  .tools{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .tools .field-box:first-child{grid-column:1/-1}
+}
+@media (max-width:1040px){
+  .nav,.top-cta .btn--clair{display:none}
+  .burger{display:inline-flex}
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .card--big{grid-row:auto}
+  .card--big .card-media{display:block}
+  .card--big .card-photo{aspect-ratio:16/9;min-height:0}
+  .ig-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .hero-in{grid-template-columns:1fr}
+  .fiche-body{grid-template-columns:1fr}
+}
+@media (max-width:760px){
+  body{font-size:16.5px;padding-bottom:calc(62px + env(safe-area-inset-bottom))}
+  section[id],#demande{scroll-margin-top:64px}
+  .top-in{height:64px}
+  .top-cta .btn{display:none}
+  .hero{min-height:max(100svh,760px)}
+  .hero-in{padding-top:110px}
+  .hero::after{background:linear-gradient(0deg,rgba(12,17,24,.97) 0%,rgba(12,17,24,.9) 48%,rgba(12,17,24,.62) 78%,rgba(12,17,24,.5) 100%)}
+  .hero-actions .btn{flex:1 1 100%}
+  .une{width:100%}
+  .hero-facts li{border-right:0;margin-right:0;padding:10px 0;width:100%;border-bottom:1px solid rgba(255,255,255,.12)}
+  .hero-facts li:last-child{border-bottom:0;padding-bottom:calc(74px + env(safe-area-inset-bottom))}
+  .tools{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .chips{flex-wrap:nowrap;overflow-x:auto;margin-inline:calc(var(--gutter) * -1);padding-inline:var(--gutter);scrollbar-width:none;max-width:100vw}
+  .chips::-webkit-scrollbar{display:none}
+  .chip{flex:none}
+  .grid{grid-template-columns:1fr}
+  .card--big{grid-column:auto}
+  .card--big .card-photo{aspect-ratio:4/3}
+  .card--big .prix{font-size:2rem;left:14px;bottom:-14px}
+  .card--big .card-body{padding-top:28px}
+  .panels,.assur,.visit,.ask,.form{grid-template-columns:1fr}
+  .panel{aspect-ratio:4/3.4}
+  .ig-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .map,.map iframe{min-height:340px}
+  .fiche{width:100vw;max-width:100vw;max-height:100svh;height:100svh;border-radius:0;margin:0}
+  .gal{padding:12px}
+  .info dl{gap:0 16px}
+  .borne{width:92px}
+  .borne-km{font-size:25px}
+  .mbar{position:fixed;inset:auto 0 0 0;z-index:95;display:grid;grid-auto-flow:column;grid-auto-columns:1fr;background:var(--nuit);border-top:1px solid rgba(255,255,255,.14);padding-bottom:env(safe-area-inset-bottom)}
+  .mbar a{display:flex;align-items:center;justify-content:center;min-height:60px;font-weight:600;font-size:15.5px;text-decoration:none;color:#fff;border-right:1px solid rgba(255,255,255,.12)}
+  .mbar a:last-child{border-right:0}
+  .mbar a.mbar-main{background:var(--rouge)}
+  html.intro-on .mbar{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition-duration:.01ms !important;animation-duration:.01ms !important}
+}
+</style>
+</head>
+
+<body>
+<a class="skip" href="#catalogue">Aller au catalogue</a>
+
+<!-- ===================== Animation d'accueil ===================== -->
+<div class="intro" id="intro" aria-hidden="true">
+  <canvas id="introRoad"></canvas>
+  <div class="intro-sign" id="introSign">
+    <span class="sign">Muizon</span>
+    <span class="intro-word">Automobiles</span>
+  </div>
+  <div class="borne">
+    <div class="borne-cap">N 31</div>
+    <div class="borne-body">
+      <span class="borne-city">Muizon</span>
+      <span class="borne-km"><span id="introKm">12,0</span> km</span>
+    </div>
+  </div>
+  <button class="intro-skip" id="introSkip" type="button">Passer l'intro</button>
+</div>
+
+<!-- ===================== En-tête ===================== -->
+<header class="top" id="top">
+  <div class="wrap top-in">
+    <a class="logo" href="#accueil" aria-label="Muizon Automobiles, retour en haut de page">
+      <span class="sign">Muizon</span><span class="logo-word">Automobiles</span>
+    </a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="#catalogue">Catalogue</a>
+      <a href="#services">Reprise et atelier</a>
+      <a href="#instagram">Instagram</a>
+      <a href="#venir">Horaires et accès</a>
+    </nav>
+    <div class="top-cta">
+      <a class="btn btn--clair btn--s" href="#demande">Réserver un essai</a>
+      <a class="btn btn--rouge btn--s" data-phone href="#venir">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+        <span data-phone-text>Appeler</span>
+      </a>
+      <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu"><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="menu" id="menu" hidden>
+  <a href="#catalogue">Catalogue</a>
+  <a href="#services">Reprise et atelier</a>
+  <a href="#instagram">Instagram</a>
+  <a href="#venir">Horaires et accès</a>
+  <a class="btn btn--blanc" href="#demande">Réserver un essai</a>
+</div>
+
+<main id="accueil">
+
+  <!-- ===================== Hero ===================== -->
+  <section class="hero" aria-labelledby="titre">
+    <div class="hero-media" id="heroMedia" aria-hidden="true"></div>
+    <div class="wrap hero-in">
+      <div class="hero-copy">
+        <h1 class="t-xl" id="titre">Votre prochaine voiture est garée sur la Nationale&nbsp;31.</h1>
+        <p class="hero-sub">Des occasions de toutes marques, chacune vendue avec garantie. Reprise de votre véhicule, dépôt-vente et atelier d'entretien, à Muizon, à une dizaine de kilomètres de Reims.</p>
+        <div class="hero-actions">
+          <a class="btn btn--rouge" href="#catalogue">Voir le catalogue</a>
+          <a class="btn btn--clair" href="#venir">Horaires et accès</a>
+        </div>
+      </div>
+      <aside class="une" id="une" aria-label="Véhicule à la une"></aside>
+    </div>
+    <div class="hero-facts">
+      <div class="wrap">
+        <ul>
+          <li><strong><span data-stock>57</span> véhicules</strong> en stock</li>
+          <li><strong><span data-brands>20</span> marques</strong>, de la citadine au SUV</li>
+          <li><strong>Garantie</strong> sur chaque véhicule</li>
+          <li><span class="status" id="heroStatus">31 Route Nationale, Muizon</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Catalogue ===================== -->
+  <section class="band" id="catalogue" aria-labelledby="catTitre">
+    <div class="wrap">
+      <div class="band-head">
+        <h2 class="t-l" id="catTitre">Le catalogue</h2>
+        <p class="lede">Filtrez par budget, énergie ou boîte, gardez vos préférées en sélection, puis réservez un essai. Toutes les voitures se voient et s'essaient au garage.</p>
+      </div>
+
+      <form class="tools" id="tools" role="search" aria-label="Rechercher dans le catalogue" onsubmit="return false">
+        <label class="field-box"><span>Recherche</span>
+          <input type="search" id="q" placeholder="Marque, modèle, équipement" autocomplete="off">
+        </label>
+        <label class="field-box"><span>Marque</span><select id="fBrand"></select></label>
+        <label class="field-box"><span>Budget maximum</span>
+          <select id="fBudget">
+            <option value="">Sans limite</option>
+            <option value="8000">8 000 €</option>
+            <option value="12000">12 000 €</option>
+            <option value="15000">15 000 €</option>
+            <option value="20000">20 000 €</option>
+          </select>
+        </label>
+        <label class="field-box"><span>Énergie</span><select id="fFuel"></select></label>
+        <label class="field-box"><span>Boîte</span>
+          <select id="fBox">
+            <option value="">Toutes</option>
+            <option>Manuelle</option>
+            <option>Automatique</option>
+          </select>
+        </label>
+        <label class="field-box"><span>Trier par</span>
+          <select id="fSort">
+            <option value="">Mise en avant</option>
+            <option value="price-asc">Prix croissant</option>
+            <option value="price-desc">Prix décroissant</option>
+            <option value="km-asc">Kilométrage le plus bas</option>
+            <option value="year-desc">Année la plus récente</option>
+          </select>
+        </label>
+      </form>
+
+      <div class="tools-2">
+        <div class="chips" id="chips" role="group" aria-label="Filtrer par catégorie"></div>
+        <p class="count" id="count" role="status" aria-live="polite"></p>
+      </div>
+
+      <div class="grid" id="grid">
+        <noscript><p class="empty">Consultez tout le stock sur <a href="https://www.leboncoin.fr/boutique/7398758/muizon_automobiles.htm">leboncoin</a> ou sur <a href="https://occasion.largus.fr/auto/muizon-automobiles/">L'argus</a>.</p></noscript>
+      </div>
+      <div class="more" id="more" hidden><button class="btn btn--encre" type="button" id="moreBtn">Afficher plus de véhicules</button></div>
+
+      <div class="cat-foot">
+        <p>Photos non contractuelles. Prix TTC, sous réserve de disponibilité : appelez avant de vous déplacer pour un modèle précis.</p>
+        <div class="cat-links">
+          <a data-leboncoin href="https://www.leboncoin.fr/boutique/7398758/muizon_automobiles.htm" target="_blank" rel="noopener">Tout le stock sur leboncoin</a>
+          <a data-argus href="https://occasion.largus.fr/auto/muizon-automobiles/" target="_blank" rel="noopener">Tout le stock sur L'argus</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Services ===================== -->
+  <section class="band band--nuit on-dark" id="services" aria-labelledby="servTitre">
+    <div class="wrap">
+      <div class="band-head">
+        <h2 class="t-l" id="servTitre">Acheter, revendre, entretenir : une seule adresse</h2>
+        <p class="lede">Muizon Automobiles est un garage indépendant. Vous gardez le même interlocuteur de l'essai jusqu'à l'entretien.</p>
+      </div>
+      <div class="panels">
+        <article class="panel">
+          <img data-photo="1727893512947-8bdc773ceb02" data-w="900" data-h="1100" alt="Remise d'une clé de voiture de main à main" loading="lazy">
+          <div class="panel-in">
+            <h3 class="t-m">Reprise de votre véhicule</h3>
+            <p>Votre voiture actuelle est estimée sur place et sa valeur se déduit de votre achat.</p>
+            <a href="#demande" data-subject="La reprise de mon véhicule">Demander une estimation</a>
+          </div>
+        </article>
+        <article class="panel">
+          <img data-photo="1703098916444-10c32cf34933" data-w="900" data-h="1100" alt="Citadine blanche stationnée, vue de face" loading="lazy">
+          <div class="panel-in">
+            <h3 class="t-m">Dépôt-vente</h3>
+            <p>Vous confiez votre voiture au garage, qui gère l'annonce, les appels, les visites et les essais.</p>
+            <a href="#demande" data-subject="Un dépôt-vente">Proposer ma voiture</a>
+          </div>
+        </article>
+        <article class="panel">
+          <img data-photo="1771340012319-0b4fca008b54" data-w="900" data-h="1100" alt="Mécanicien penché sur le moteur d'une berline dans un atelier" loading="lazy">
+          <div class="panel-in">
+            <h3 class="t-m">Atelier d'entretien</h3>
+            <p>Révision, vidange, freinage, distribution, pneus : toutes marques, sur rendez-vous.</p>
+            <a href="#demande" data-subject="Un rendez-vous à l'atelier">Prendre rendez-vous</a>
+          </div>
+        </article>
+      </div>
+      <div class="assur">
+        <div>
+          <h3 class="t-m">Garantie incluse</h3>
+          <p>Chaque véhicule du parc est vendu avec garantie. Le suivi d'entretien connu est indiqué sur sa fiche.</p>
+        </div>
+        <div>
+          <h3 class="t-m">Extension de garantie</h3>
+          <p>La garantie peut être prolongée au moment de l'achat. Les durées et les tarifs vous sont détaillés au garage.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Instagram ===================== -->
+  <section class="band" id="instagram" aria-labelledby="igTitre">
+    <div class="wrap">
+      <div class="band-head">
+        <div>
+          <h2 class="t-l" id="igTitre">Les arrivages, d'abord sur Instagram</h2>
+          <p class="ig-handle" data-ig-handle hidden></p>
+        </div>
+        <a class="btn btn--plein" data-ig href="https://www.instagram.com/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r=".6" fill="currentColor"/></svg>
+          Suivre le garage
+        </a>
+      </div>
+      <div class="ig-grid" id="igGrid"></div>
+    </div>
+  </section>
+
+  <!-- ===================== Venir ===================== -->
+  <section class="band band--nuit on-dark" id="venir" aria-labelledby="venirTitre">
+    <div class="wrap">
+      <div class="band-head">
+        <h2 class="t-l" id="venirTitre">Passez voir les voitures</h2>
+        <p class="lede">Le garage est sur la route de Reims à Soissons. On se gare devant, sans rendez-vous pour une visite du parc.</p>
+      </div>
+      <div class="visit">
+        <div>
+          <address class="t-m">31 Route Nationale<br>51140 Muizon</address>
+          <p class="visit-status"><span class="status" id="visitStatus">Horaires ci-dessous</span></p>
+          <table class="hours" id="hours">
+            <caption class="sr">Horaires d'ouverture</caption>
+            <tbody>
+              <tr data-day="1"><th scope="row">Lundi</th><td>13 h – 19 h</td></tr>
+              <tr data-day="2"><th scope="row">Mardi</th><td>9 h – 18 h</td></tr>
+              <tr data-day="3"><th scope="row">Mercredi</th><td>9 h – 18 h</td></tr>
+              <tr data-day="4"><th scope="row">Jeudi</th><td>9 h – 18 h</td></tr>
+              <tr data-day="5"><th scope="row">Vendredi</th><td>9 h – 18 h</td></tr>
+              <tr data-day="6"><th scope="row">Samedi</th><td>9 h – 18 h</td></tr>
+              <tr data-day="0"><th scope="row">Dimanche</th><td class="closed">Fermé</td></tr>
+            </tbody>
+          </table>
+          <div class="visit-actions">
+            <a class="btn btn--rouge" data-phone href="#demande"><span data-phone-text>Appeler</span></a>
+            <a class="btn btn--clair" data-maps href="https://www.google.com/maps/dir/?api=1&destination=31+Route+Nationale+51140+Muizon" target="_blank" rel="noopener">Lancer l'itinéraire</a>
+          </div>
+        </div>
+        <div class="map">
+          <iframe title="Carte : Muizon Automobiles, 31 Route Nationale, Muizon" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=31+Route+Nationale+51140+Muizon&z=14&output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Demande ===================== -->
+  <section class="band band--blanc" id="demande" aria-labelledby="askTitre">
+    <div class="wrap ask">
+      <div>
+        <h2 class="t-l" id="askTitre">Un essai, une reprise, une question ?</h2>
+        <p class="lede">Indiquez la voiture qui vous intéresse ou celle que vous souhaitez faire reprendre. Le garage vous rappelle pendant les heures d'ouverture.</p>
+      </div>
+      <form class="form" id="askForm" novalidate>
+        <div class="field">
+          <label for="f-nom">Nom</label>
+          <input id="f-nom" name="nom" type="text" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="f-tel">Téléphone</label>
+          <input id="f-tel" name="telephone" type="tel" autocomplete="tel" inputmode="tel" required>
+        </div>
+        <div class="field field--full">
+          <label for="f-sujet">Votre demande concerne</label>
+          <select id="f-sujet" name="sujet">
+            <option>Un essai</option>
+            <option>Un véhicule en vente</option>
+            <option>La reprise de mon véhicule</option>
+            <option>Un dépôt-vente</option>
+            <option>Un rendez-vous à l'atelier</option>
+            <option>Autre chose</option>
+          </select>
+        </div>
+        <div class="field field--full">
+          <label for="f-msg">Message (modèle, année, kilométrage…)</label>
+          <textarea id="f-msg" name="message" required></textarea>
+        </div>
+        <button class="btn btn--rouge" type="submit">Envoyer la demande</button>
+        <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<!-- ===================== Pied ===================== -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-in">
+      <div>
+        <a class="logo" href="#accueil"><span class="sign">Muizon</span><span class="logo-word">Automobiles</span></a>
+        <p>31 Route Nationale, 51140 Muizon<br>Lundi 13 h – 19 h, du mardi au samedi 9 h – 18 h</p>
+      </div>
+      <ul>
+        <li><a data-ig href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a data-leboncoin href="https://www.leboncoin.fr/boutique/7398758/muizon_automobiles.htm" target="_blank" rel="noopener">leboncoin</a></li>
+        <li><a data-argus href="https://occasion.largus.fr/auto/muizon-automobiles/" target="_blank" rel="noopener">L'argus</a></li>
+        <li><button type="button" id="legalOpen">Mentions légales et crédits</button></li>
+      </ul>
+    </div>
+    <p class="foot-legal">Muizon Automobiles SAS, SIREN 101 498 038. Prix TTC affichés à titre indicatif, sous réserve de disponibilité du véhicule. Photos non contractuelles.</p>
+  </div>
+</footer>
+
+<!-- Fiche véhicule -->
+<dialog class="fiche" id="fiche" aria-labelledby="ficheTitre" tabindex="-1">
+  <div class="fiche-bar">
+    <p id="fichePos"></p>
+    <div>
+      <button class="round" type="button" id="fichePrev" aria-label="Véhicule précédent"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button>
+      <button class="round" type="button" id="ficheNext" aria-label="Véhicule suivant"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+      <button class="round" type="button" id="ficheClose" aria-label="Fermer la fiche"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+  </div>
+  <div class="fiche-body" id="ficheBody"></div>
+</dialog>
+
+<dialog class="legal" id="legal" aria-labelledby="legalTitre">
+  <h2 class="t-m" id="legalTitre">Mentions légales et crédits</h2>
+  <p><strong>Éditeur :</strong> MUIZON AUTOMOBILES, société par actions simplifiée, 31 Route Nationale, 51140 Muizon.</p>
+  <p><strong>SIREN :</strong> 101 498 038. <strong>SIRET :</strong> 101 498 038 00013. <strong>TVA :</strong> FR68101498038.</p>
+  <p><strong>Hébergeur :</strong> à compléter (nom, adresse, téléphone).</p>
+  <p><strong>Données personnelles :</strong> les informations saisies dans le formulaire servent uniquement à vous recontacter. Vous pouvez demander leur suppression à tout moment auprès du garage.</p>
+  <p><strong>Photos :</strong> images d'illustration issues d'Unsplash, non contractuelles.</p>
+  <button class="btn btn--encre btn--s" type="button" id="legalClose">Fermer</button>
+</dialog>
+
+<nav class="mbar" aria-label="Actions rapides">
+  <a class="mbar-main" data-phone href="#venir">Appeler</a>
+  <a href="#catalogue">Catalogue</a>
+  <a href="#demande">Essai</a>
+  <a data-maps href="https://www.google.com/maps/dir/?api=1&destination=31+Route+Nationale+51140+Muizon" target="_blank" rel="noopener">Itinéraire</a>
+</nav>
+
+<script>
+/* =====================================================================
+   CONFIGURATION — tout ce qui change se règle ici
+   ===================================================================== */
+const CONFIG = {
+  // Téléphone du garage au format affiché, ex. "03 26 12 34 56".
+  // Vide : les boutons « Appeler » sont masqués.
+  phone: "",
+
+  // E-mail de réception du formulaire (repli en mailto si formEndpoint est vide).
+  email: "",
+
+  // Point d'envoi du formulaire (Formspree, Basin, route API Next.js…). POST JSON.
+  formEndpoint: "",
+
+  // Identifiant Instagram du garage, sans @. Vide : aucun lien Instagram affiché,
+  // les vignettes ouvrent les fiches du catalogue.
+  instagram: "",
+
+  // Flux Instagram en direct : URL JSON d'un flux Behold (https://feeds.behold.so/XXXXXXXX).
+  instagramFeedUrl: "",
+
+  stockCount: 57,
+  brandCount: 20,
+  leboncoin: "https://www.leboncoin.fr/boutique/7398758/muizon_automobiles.htm",
+  argus: "https://occasion.largus.fr/auto/muizon-automobiles/",
+
+  // Identifiants des véhicules mis en avant dans le hero (ordre d'affichage).
+  featured: ["touareg", "a6", "renegade"],
+
+  // Nombre de véhicules affichés avant le bouton « Afficher plus ».
+  pageSize: 9,
+
+  // Horaires (0 = dimanche). [ouverture, fermeture] en heures décimales, null = fermé.
+  // Répercuter tout changement dans le tableau HTML #hours et le JSON-LD.
+  hours: { 0: null, 1: [13, 19], 2: [9, 18], 3: [9, 18], 4: [9, 18], 5: [9, 18], 6: [9, 18] }
+};
+
+/* =====================================================================
+   VÉHICULES
+   photos : identifiants Unsplash (images d'illustration) OU URL complètes / chemins
+            locaux (ex. "/photos/touareg-1.jpg"). La première sert de vignette.
+   demo: true  = fiche inventée pour la maquette (modèle présent dans les marques
+                 du garage, mais année, kilométrage, prix et équipements fictifs).
+   demo: false = données reprises des annonces réelles du 12/10/2026 ; seule la
+                 photo est une illustration.
+   ===================================================================== */
+const VEHICLES = [
+  { id:"touareg", cat:"suv", brand:"Volkswagen", model:"Touareg", version:"3.0 V6 TDI R-Line", year:2016, km:121500, fuel:"Diesel", box:"Automatique", price:26980,
+    tags:["Première main"], equip:["Première main","Suivi d'entretien","Attelage","Finition R-Line","V6 TDI"],
+    photos:["1655125911408-6ad111380354","1655125910044-9969c01063ad","1655125911732-59048da6dbfa","1655125910638-8b582f37840f"], hero:"1655125910044-9969c01063ad", pos:"50% 62%",
+    url:"https://occasion.largus.fr/auto/annonce-9eb0a770-d2bf-4e29-a8a7-41944d661817-volkswagen-touareg-2016-121500km", demo:false },
+  { id:"z4", cat:"plaisir", brand:"BMW", model:"Z4 Roadster", version:"3.0si 265 ch Pack M", year:2006, km:114736, fuel:"Essence", box:"Manuelle", price:23980,
+    tags:["Cabriolet"], equip:["Pack M","Volant M","Sièges électriques","Suivi d'entretien","6 cylindres 265 ch"],
+    photos:["1682274664623-7c65c38a5900","1705565535293-0ba02dbf499e"],
+    url:"https://occasion.largus.fr/auto/annonce-e4f1b142-473c-4485-aa1f-0d60c7f4951b-bmw-z4-2006-114736km", demo:false },
+  { id:"classe-a", cat:"citadine", brand:"Mercedes-Benz", model:"Classe A", version:"180 d 7G-DCT Progressive Line", year:2019, km:89600, fuel:"Diesel", box:"Automatique", price:19980,
+    tags:["Boîte auto"], equip:["Écran MBUX","Caméra de recul","Sièges chauffants","Régulateur","Suivi Mercedes"],
+    photos:["1665857013224-9540a447216b","1665856999901-180960454ceb"], demo:true },
+  { id:"a6", cat:"famille", brand:"Audi", model:"A6", version:"2.0 TDI 190 S tronic Avus", year:2016, km:148200, fuel:"Diesel", box:"Automatique", price:17980,
+    tags:["Boîte auto"], equip:["Cuir","GPS MMI","Phares LED","Sièges chauffants","Suivi Audi"],
+    photos:["1572199109282-442d26b37fa6"], pos:"50% 70%", demo:true },
+  { id:"evoque", cat:"suv", brand:"Land Rover", model:"Range Rover Evoque", version:"2.0 TD4 150 SE Dynamic", year:2016, km:134000, fuel:"Diesel", box:"Automatique", price:17480,
+    tags:["4 roues motrices"], equip:["4 roues motrices","Toit panoramique","Cuir","Caméra de recul","GPS"],
+    photos:["1658547737133-18ff87807de7"], demo:true },
+  { id:"3008", cat:"suv", brand:"Peugeot", model:"3008", version:"1.5 BlueHDi 130 EAT8 Allure", year:2019, km:112700, fuel:"Diesel", box:"Automatique", price:16980,
+    tags:["Boîte auto"], equip:["i-Cockpit","CarPlay","Caméra de recul","Hayon mains libres","Suivi Peugeot"],
+    photos:["1771783203301-e475b0be1abf"], demo:true },
+  { id:"puma", cat:"suv", brand:"Ford", model:"Puma", version:"1.0 EcoBoost 125 mHEV Titanium", year:2021, km:58400, fuel:"Hybride", box:"Manuelle", price:15980,
+    tags:["Hybride léger"], equip:["Hybridation légère","CarPlay","Barres de toit","Aide au stationnement","Suivi Ford"],
+    photos:["1655959625521-807a817f56bf"], demo:true },
+  { id:"passat", cat:"famille", brand:"Volkswagen", model:"Passat", version:"1.6 TDI 120 DSG7 Confortline", year:2018, km:96092, fuel:"Diesel", box:"Automatique", price:14480,
+    tags:["Boîte auto"], equip:["Suivi complet","Régulateur adaptatif","Caméra de recul","Boîte DSG7"],
+    photos:["1672052495056-2b55c254a776","1672052541260-b2c87da79518","1672052559918-2fda9112020e","1672052506387-abca3e9f29ec"],
+    url:"https://occasion.largus.fr/auto/annonce-0c88f469-7e8e-40e0-b32d-384a09973d63-volkswagen-passat-2018-96092km", demo:false },
+  { id:"208", cat:"citadine", brand:"Peugeot", model:"208", version:"PureTech 100 Allure", year:2021, km:48900, fuel:"Essence", box:"Manuelle", price:13480,
+    tags:["Faible kilométrage"], equip:["i-Cockpit 3D","CarPlay","Radar de recul","Phares LED"],
+    photos:["1656947874545-075c9b00f44c","1679932187595-1dc665b19f0e"], demo:true },
+  { id:"renegade", cat:"suv", brand:"Jeep", model:"Renegade", version:"1.6 MultiJet 120 Longitude", year:2017, km:108500, fuel:"Diesel", box:"Manuelle", price:12980,
+    tags:["Barres de toit"], equip:["Barres de toit","GPS","Régulateur","Radar de recul"],
+    photos:["1609608934835-80cfd2eaf62a","1609608933706-8dd81d8d3975","1609608934025-c9414a01d245"], hero:"1609608933706-8dd81d8d3975", pos:"35% 60%", demo:true },
+  { id:"duster", cat:"suv", brand:"Dacia", model:"Duster", version:"dCi 4x4 Prestige Edition", year:2016, km:124425, fuel:"Diesel", box:"Manuelle", price:12480,
+    tags:["4 roues motrices"], equip:["4 roues motrices","Snorkel","Rampe LED","Finition Prestige"],
+    photos:["1653293558800-173e50a81b97"],
+    url:"https://occasion.largus.fr/auto/annonce-a9ec0ff2-4f20-41f3-855b-8b8151daf50b-dacia-duster-2016-124425km", demo:false },
+  { id:"clio", cat:"citadine", brand:"Renault", model:"Clio V", version:"TCe 90 Intens", year:2020, km:61200, fuel:"Essence", box:"Manuelle", price:11980,
+    tags:[], equip:["Écran 9 pouces","CarPlay","Climatisation automatique","Radar de recul","Suivi Renault"],
+    photos:["1666335009164-2597314da8e7","1666335009171-3ddc17937d6d","1666335009169-a9505c436d80"], demo:true },
+  { id:"a1", cat:"citadine", brand:"Audi", model:"A1 Sportback", version:"1.4 TFSI 125 S line", year:2015, km:96400, fuel:"Essence", box:"Manuelle", price:11480,
+    tags:["S line"], equip:["Finition S line","Jantes 17 pouces","Bluetooth","Régulateur"],
+    photos:["1694048696104-05c75470d69a"], demo:true },
+  { id:"corsa", cat:"citadine", brand:"Opel", model:"Corsa", version:"1.5 D 100 ch Elegance", year:2021, km:107245, fuel:"Diesel", box:"Manuelle", price:10480,
+    tags:[], equip:["Suivi Opel","Compteurs numériques","CarPlay","Caméra de recul"],
+    photos:["1703098916487-ab6668147d50","1703098916508-56dfc8d96e9c","1703098916391-fcd1f322499b","1703098916444-10c32cf34933"],
+    url:"https://occasion.largus.fr/auto/annonce-550b7ec5-b73d-4b6d-abc9-073be00980ca-opel-corsa-2021-107245km", demo:false },
+  { id:"rcz", cat:"plaisir", brand:"Peugeot", model:"RCZ", version:"1.6 THP 155 ch", year:2014, km:98600, fuel:"Essence", box:"Manuelle", price:8980,
+    tags:["Coupé"], equip:["Suivi complet","Toit double bulle","Jantes alliage"],
+    photos:["1626684458962-c38a637af935"],
+    url:"https://occasion.largus.fr/auto/annonce-d5d14a16-07c1-4c9f-9929-9375520ac3ff-peugeot-rcz-2014-98600km", demo:false },
+  { id:"500", cat:"citadine", brand:"Fiat", model:"500C", version:"1.2 69 ch Lounge", year:2017, km:62300, fuel:"Essence", box:"Manuelle", price:8480,
+    tags:["Cabriolet"], equip:["Capote électrique","Climatisation","Bluetooth","Jantes alliage"],
+    photos:["1536667842290-7602f6a43a2b"], demo:true },
+  { id:"ds3", cat:"citadine", brand:"DS", model:"DS 3", version:"1.6 VTi 120 ch So Chic", year:2014, km:87990, fuel:"Essence", box:"Manuelle", price:6980,
+    tags:[], equip:["Suivi d'entretien","Bluetooth","Finition So Chic"],
+    photos:["1571175596870-63158b02c7fb","1571070201979-4ceaf0eee69e"],
+    url:"https://occasion.largus.fr/auto/annonce-f394e91d-9afe-4bdb-ab0e-f34fd7594120-citroen-ds3-2014-87990km", demo:false },
+  { id:"clk", cat:"plaisir", brand:"Mercedes-Benz", model:"CLK Coupé", version:"230 Kompressor Élégance", year:1999, km:187300, fuel:"Essence", box:"Automatique", price:5980,
+    tags:["Coupé"], equip:["Cuir","Climatisation automatique","Boîte automatique","Régulateur"],
+    photos:["1704143611301-8a9f54bbbd35"], demo:true }
+];
+
+const CATEGORIES = [
+  ["tous", "Tous"],
+  ["citadine", "Citadines"],
+  ["suv", "SUV et 4x4"],
+  ["famille", "Berlines"],
+  ["plaisir", "Coupés et cabriolets"]
+];
+const CAT_LABEL = { citadine:"Citadine", suv:"SUV, 4x4", famille:"Berline", plaisir:"Coupé, cabriolet" };
+
+/* Vignettes de repli de la section Instagram (identifiant photo, véhicule lié) */
+const IG_FALLBACK = [
+  ["1703098916391-fcd1f322499b", "corsa"], ["1609608934025-c9414a01d245", "renegade"], ["1655125910638-8b582f37840f", "touareg"],
+  ["1679932187595-1dc665b19f0e", "208"], ["1666335009169-a9505c436d80", "clio"], ["1672052506387-abca3e9f29ec", "passat"]
+];
+
+/* =====================================================================
+   Utilitaires
+   ===================================================================== */
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
+const nf = new Intl.NumberFormat("fr-FR");
+const esc = s => String(s).replace(/[&<>"']/g, c => ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;" }[c]));
+const norm = s => String(s).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
+const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const byId = id => VEHICLES.find(v => v.id === id);
+
+/* Adresse d'une photo : identifiant Unsplash ou URL / chemin fourni tel quel */
+function photo(src, w, h) {
+  if (/^(https?:)?\/\//.test(src) || src.startsWith("/") || src.startsWith(".")) return src;
+  return "https://images.unsplash.com/photo-" + src + "?auto=format&fit=crop&q=72&w=" + w + (h ? "&h=" + h : "");
+}
+function srcset(src, sizes, ratio) {
+  if (/^(https?:)?\/\//.test(src) || src.startsWith("/") || src.startsWith(".")) return "";
+  return sizes.map(w => photo(src, w, ratio ? Math.round(w * ratio) : 0) + " " + w + "w").join(", ");
+}
+const prix = v => `<span class="prix">${nf.format(v.price)}<small>€</small></span>`;
+const HEART = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.6a4.3 4.3 0 0 1 7.5 2.7c0 5.6-7.5 10.2-7.5 10.2z" stroke-linejoin="round"/></svg>`;
+
+/* Images statiques déclarées en data-photo */
+$$("img[data-photo]").forEach(img => { img.src = photo(img.dataset.photo, +img.dataset.w, +img.dataset.h); });
+
+/* =====================================================================
+   Animation d'accueil : route de nuit dessinée sur canvas
+   ===================================================================== */
+function drawRoad(canvas, offset) {
+  const dpr = Math.min(window.devicePixelRatio || 1, 2);
+  const w = canvas.clientWidth, h = canvas.clientHeight;
+  if (!w || !h) return;
+  if (canvas.width !== Math.round(w * dpr) || canvas.height !== Math.round(h * dpr)) {
+    canvas.width = Math.round(w * dpr); canvas.height = Math.round(h * dpr);
+  }
+  const c = canvas.getContext("2d");
+  c.setTransform(dpr, 0, 0, dpr, 0, 0);
+  const hz = h * 0.44, cx = w / 2, depth = h - hz, half = Math.max(w * 0.44, 340);
+  const P = (d, lx) => [cx + (lx * half) / d, hz + depth / d];
+  const quad = (d0, d1, l0, l1) => {
+    const a = P(d0, l0), b = P(d0, l1), e = P(d1, l1), f = P(d1, l0);
+    c.beginPath(); c.moveTo(a[0], a[1]); c.lineTo(b[0], b[1]); c.lineTo(e[0], e[1]); c.lineTo(f[0], f[1]); c.closePath(); c.fill();
+  };
+  const NEAR = 0.7, FAR = 70;
+  let g = c.createLinearGradient(0, 0, 0, hz);
+  g.addColorStop(0, "#07090C"); g.addColorStop(1, "#141B23");
+  c.fillStyle = g; c.fillRect(0, 0, w, hz + 1);
+  g = c.createRadialGradient(cx, hz, 0, cx, hz, w * 0.5);
+  g.addColorStop(0, "rgba(255,210,31,.10)"); g.addColorStop(1, "rgba(255,210,31,0)");
+  c.fillStyle = g; c.fillRect(0, 0, w, hz);
+  c.fillStyle = "#0E1216"; c.fillRect(0, hz, w, depth);
+  c.fillStyle = "#1A2027"; quad(NEAR, FAR, -1, 1);
+  c.save(); c.beginPath(); c.rect(0, hz, w, depth); c.clip();
+  g = c.createRadialGradient(cx, h * 1.08, 0, cx, h * 1.08, h * 0.95);
+  g.addColorStop(0, "rgba(242,205,96,.30)"); g.addColorStop(.55, "rgba(242,205,96,.08)"); g.addColorStop(1, "rgba(242,205,96,0)");
+  c.fillStyle = g; c.fillRect(0, hz, w, depth); c.restore();
+  c.fillStyle = "rgba(244,241,232,.72)";
+  quad(NEAR, FAR, -0.93, -0.905); quad(NEAR, FAR, 0.905, 0.93);
+  const S = 5, L = 1.9, off = offset % S;
+  for (let z = -off - S; z < FAR; z += S) {
+    const d0 = Math.max(1 + z, NEAR), d1 = 1 + z + L;
+    if (d1 <= NEAR) continue;
+    c.fillStyle = "rgba(244,241,232," + Math.max(0, Math.min(.92, 1.15 - d0 / 34)).toFixed(3) + ")";
+    quad(d0, d1, -0.014, 0.014);
+  }
+  const SB = 9, offB = offset % SB;
+  for (let z = -offB; z < FAR; z += SB) {
+    const d = 1 + z; if (d < NEAR) continue;
+    const a = Math.max(0, Math.min(.9, 1.1 - d / 30));
+    for (const side of [-1, 1]) {
+      const p = P(d, side * 1.2), ph = (half * 0.17) / d, pw = Math.max(1, (half * 0.022) / d);
+      c.fillStyle = "rgba(244,241,232," + a.toFixed(3) + ")";
+      c.fillRect(p[0] - pw / 2, p[1] - ph, pw, ph);
+      c.fillStyle = "rgba(210,31,38," + a.toFixed(3) + ")";
+      c.fillRect(p[0] - pw / 2, p[1] - ph * 0.78, pw, ph * 0.2);
+    }
+  }
+  g = c.createLinearGradient(0, hz, 0, hz + depth * 0.3);
+  g.addColorStop(0, "rgba(14,19,25,1)"); g.addColorStop(1, "rgba(14,19,25,0)");
+  c.fillStyle = g; c.fillRect(0, hz, w, depth * 0.3);
+}
+
+(function intro() {
+  const root = document.documentElement, el = $("#intro");
+  const done = () => { root.classList.remove("intro-on"); root.classList.add("ready"); el.remove(); };
+  let seen = false;
+  try { seen = sessionStorage.getItem("ma_intro") === "1"; } catch (e) {}
+  const forced = /[?&]intro\b/.test(location.search);
+  if (reduced || (seen && !forced)) { done(); return; }
+  try { sessionStorage.setItem("ma_intro", "1"); } catch (e) {}
+
+  root.classList.add("intro-on");
+  const road = $("#introRoad"), sign = $("#introSign"), km = $("#introKm");
+  const ROAD_END = 46, DRIVE = 2300, HOLD = 1000, FADE = 800;
+  let start = null, raf = 0, leaving = false;
+
+  function leave() {
+    if (leaving) return; leaving = true;
+    cancelAnimationFrame(raf);
+    el.classList.add("is-leaving");
+    root.classList.remove("intro-on"); root.classList.add("ready");
+    setTimeout(() => el.remove(), FADE + 60);
+    window.removeEventListener("keydown", leave);
+  }
+  function frame(t) {
+    if (start === null) start = t;
+    const p = Math.min(1, (t - start) / DRIVE);
+    const e = 1 - Math.pow(1 - p, 3);
+    const travelled = ROAD_END * e, D = ROAD_END + 1 - travelled;
+    drawRoad(road, travelled);
+    sign.style.transform = "translate(-50%,-50%) scale(" + (1 / D).toFixed(4) + ")";
+    sign.style.opacity = Math.min(1, (ROAD_END + 1 - D) / 10).toFixed(3);
+    km.textContent = (12 * (1 - e)).toFixed(1).replace(".", ",");
+    if (p < 1) { raf = requestAnimationFrame(frame); }
+    else { el.classList.add("is-arrived"); setTimeout(leave, HOLD); }
+  }
+  drawRoad(road, 0);
+  const go = () => { if (!leaving && !raf) raf = requestAnimationFrame(frame); };
+  const fontsReady = (document.fonts && document.fonts.ready) || Promise.resolve();
+  Promise.race([fontsReady, new Promise(r => setTimeout(r, 1200))]).then(go, go);
+  $("#introSkip").addEventListener("click", leave);
+  window.addEventListener("keydown", leave);
+  window.addEventListener("resize", () => { if (!leaving) drawRoad(road, ROAD_END); });
+})();
+
+/* =====================================================================
+   Coordonnées issues de CONFIG
+   ===================================================================== */
+const TEL = CONFIG.phone.replace(/[^\d+]/g, "");
+const TEL_HREF = TEL ? "tel:" + (TEL.startsWith("0") ? "+33" + TEL.slice(1) : TEL) : "";
+const IG_USER = CONFIG.instagram.replace(/^@/, "").trim();
+const IG_URL = IG_USER ? "https://www.instagram.com/" + encodeURIComponent(IG_USER) + "/" : "";
+
+(function contact() {
+  $$("[data-phone]").forEach(a => {
+    if (!TEL) { a.hidden = true; return; }
+    a.href = TEL_HREF;
+    const t = $("[data-phone-text]", a);
+    if (t) t.textContent = CONFIG.phone;
+  });
+  $$("[data-ig]").forEach(a => {
+    const holder = a.closest("li") || a;
+    if (!IG_URL) { holder.hidden = true; return; }
+    a.href = IG_URL;
+  });
+  $$("[data-ig-handle]").forEach(n => { n.hidden = !IG_USER; n.textContent = "@" + IG_USER; });
+  if (!IG_USER) console.warn("Instagram non relié : renseigner CONFIG.instagram.");
+  $$("[data-stock]").forEach(n => n.textContent = CONFIG.stockCount);
+  $$("[data-brands]").forEach(n => n.textContent = CONFIG.brandCount);
+  $$("[data-leboncoin]").forEach(a => a.href = CONFIG.leboncoin);
+  $$("[data-argus]").forEach(a => a.href = CONFIG.argus);
+})();
+
+/* =====================================================================
+   Ouvert / fermé, à l'heure de Paris
+   ===================================================================== */
+(function openStatus() {
+  const DAYS = ["dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"];
+  const fmtH = h => { const hh = Math.floor(h), m = Math.round((h - hh) * 60); return hh + " h" + (m ? " " + String(m).padStart(2, "0") : ""); };
+  function now() {
+    const parts = new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/Paris", weekday: "short", hour: "2-digit", minute: "2-digit", hour12: false }).formatToParts(new Date());
+    const get = k => parts.find(p => p.type === k).value;
+    return { day: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].indexOf(get("weekday")), time: (parseInt(get("hour"), 10) % 24) + parseInt(get("minute"), 10) / 60 };
+  }
+  function update() {
+    const { day, time } = now(), today = CONFIG.hours[day];
+    let open = false, text;
+    if (today && time >= today[0] && time < today[1]) { open = true; text = "Ouvert, ferme à " + fmtH(today[1]); }
+    else if (today && time < today[0]) { text = "Fermé, ouvre aujourd'hui à " + fmtH(today[0]); }
+    else {
+      for (let i = 1; i <= 7; i++) {
+        const d = (day + i) % 7, hrs = CONFIG.hours[d];
+        if (hrs) { text = "Fermé, ouvre " + (i === 1 ? "demain" : DAYS[d]) + " à " + fmtH(hrs[0]); break; }
+      }
+    }
+    [$("#heroStatus"), $("#visitStatus")].forEach(n => { if (!n) return; n.textContent = text; n.classList.toggle("is-open", open); });
+    $$("#hours tr").forEach(tr => tr.classList.toggle("is-today", Number(tr.dataset.day) === day));
+  }
+  try { update(); setInterval(update, 60000); } catch (e) {}
+})();
+
+/* =====================================================================
+   Sélection (favoris), conservée dans le navigateur
+   ===================================================================== */
+const Favs = (() => {
+  let set = new Set();
+  try { set = new Set(JSON.parse(localStorage.getItem("ma_favs") || "[]")); } catch (e) {}
+  const save = () => { try { localStorage.setItem("ma_favs", JSON.stringify([...set])); } catch (e) {} };
+  return {
+    has: id => set.has(id),
+    toggle(id) { set.has(id) ? set.delete(id) : set.add(id); save(); return set.has(id); },
+    count: () => VEHICLES.filter(v => set.has(v.id)).length
+  };
+})();
+
+/* =====================================================================
+   Hero : véhicules à la une
+   ===================================================================== */
+(function hero() {
+  const list = CONFIG.featured.map(byId).filter(Boolean);
+  const media = $("#heroMedia"), box = $("#une");
+  if (!list.length) { box.hidden = true; return; }
+  let i = 0;
+  const imgs = list.map((v, k) => {
+    const im = new Image();
+    const src = v.hero || v.photos[0];
+    im.alt = ""; im.decoding = "async";
+    im.style.objectPosition = v.pos || "50% 50%";
+    if (k === 0) { im.src = photo(src, 2000, 1250); im.fetchPriority = "high"; }
+    else im.dataset.src = photo(src, 2000, 1250);
+    media.appendChild(im);
+    return im;
+  });
+  const ARROW = d => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="${d}"/></svg>`;
+  function show(n) {
+    i = (n + list.length) % list.length;
+    const v = list[i];
+    imgs.forEach((im, k) => {
+      if (k === i && im.dataset.src) { im.src = im.dataset.src; delete im.dataset.src; }
+      im.classList.toggle("is-on", k === i);
+    });
+    box.innerHTML = `
+      <div class="une-top">
+        <span class="une-label">À la une cette semaine</span>
+        ${list.length > 1 ? `<span class="une-nav">
+          <button type="button" data-dir="-1" aria-label="Véhicule à la une précédent">${ARROW("m15 18-6-6 6-6")}</button>
+          <span aria-hidden="true">${i + 1} / ${list.length}</span>
+          <button type="button" data-dir="1" aria-label="Véhicule à la une suivant">${ARROW("m9 18 6-6-6-6")}</button>
+        </span>` : ""}
+      </div>
+      <p class="une-brand">${esc(v.brand)}</p>
+      <h2 class="t-m une-model">${esc(v.model)}</h2>
+      <p class="une-specs">${v.year}, ${nf.format(v.km)} km, ${esc(v.fuel.toLowerCase())}, ${esc(v.box.toLowerCase())}</p>
+      <div class="une-foot">
+        ${prix(v)}
+        <a class="btn btn--blanc btn--s" href="#voiture-${esc(v.id)}">Voir la fiche</a>
+      </div>`;
+  }
+  box.addEventListener("click", e => {
+    const b = e.target.closest("[data-dir]"); if (!b) return;
+    show(i + Number(b.dataset.dir));
+    const again = $(`[data-dir="${b.dataset.dir}"]`, box); if (again) again.focus();
+  });
+  show(0);
+})();
+
+/* =====================================================================
+   Catalogue : filtres, tri, grille
+   ===================================================================== */
+const Catalogue = (() => {
+  const grid = $("#grid"), chips = $("#chips"), count = $("#count"), more = $("#more");
+  const q = $("#q"), fBrand = $("#fBrand"), fBudget = $("#fBudget"), fFuel = $("#fFuel"), fBox = $("#fBox"), fSort = $("#fSort");
+  const state = { cat: "tous", favOnly: false, shown: CONFIG.pageSize };
+  let current = VEHICLES.slice();
+
+  const uniq = k => [...new Set(VEHICLES.map(v => v[k]))].sort((a, b) => a.localeCompare(b, "fr"));
+  fBrand.innerHTML = `<option value="">Toutes</option>` + uniq("brand").map(b => `<option>${esc(b)}</option>`).join("");
+  fFuel.innerHTML = `<option value="">Toutes</option>` + uniq("fuel").map(b => `<option>${esc(b)}</option>`).join("");
+
+  function renderChips() {
+    const n = k => k === "tous" ? VEHICLES.length : VEHICLES.filter(v => v.cat === k).length;
+    chips.innerHTML = CATEGORIES.filter(([k]) => n(k) > 0).map(([k, label]) =>
+      `<button class="chip" type="button" data-cat="${k}" aria-pressed="${!state.favOnly && k === state.cat}">${esc(label)}<small>${n(k)}</small></button>`).join("") +
+      `<button class="chip chip--fav" type="button" data-fav aria-pressed="${state.favOnly}">${HEART.replace("<svg", '<svg fill="none" stroke="currentColor" stroke-width="2"')}Ma sélection<small>${Favs.count()}</small></button>`;
+  }
+
+  function filtered() {
+    const words = norm(q.value).split(/\s+/).filter(Boolean);
+    const budget = Number(fBudget.value) || Infinity;
+    let rows = VEHICLES.filter(v => {
+      if (state.favOnly) { if (!Favs.has(v.id)) return false; }
+      else if (state.cat !== "tous" && v.cat !== state.cat) return false;
+      if (fBrand.value && v.brand !== fBrand.value) return false;
+      if (fFuel.value && v.fuel !== fFuel.value) return false;
+      if (fBox.value && v.box !== fBox.value) return false;
+      if (v.price > budget) return false;
+      if (words.length) {
+        const hay = norm([v.brand, v.model, v.version, v.fuel, v.box, v.year, (v.equip || []).join(" "), (v.tags || []).join(" ")].join(" "));
+        if (!words.every(w => hay.includes(w))) return false;
+      }
+      return true;
+    });
+    const s = fSort.value;
+    if (s === "price-asc") rows.sort((a, b) => a.price - b.price);
+    if (s === "price-desc") rows.sort((a, b) => b.price - a.price);
+    if (s === "km-asc") rows.sort((a, b) => a.km - b.km);
+    if (s === "year-desc") rows.sort((a, b) => b.year - a.year || a.km - b.km);
+    return rows;
+  }
+  const isDefault = () => !state.favOnly && state.cat === "tous" && !q.value.trim() && !fBrand.value && !fBudget.value && !fFuel.value && !fBox.value && !fSort.value;
+
+  function card(v, big) {
+    const p = v.photos[0];
+    const sizes = big ? "(max-width:760px) 100vw, 66vw" : "(max-width:760px) 100vw, (max-width:1040px) 50vw, 33vw";
+    const ratio = big ? 0.68 : 0.75;
+    return `
+    <article class="card${big ? " card--big" : ""}">
+      <a class="card-link" href="#voiture-${esc(v.id)}">
+        <div class="card-media">
+        <div class="card-photo" data-fallback="${esc(v.brand)}">
+          <img src="${esc(photo(p, big ? 1400 : 800, Math.round((big ? 1400 : 800) * ratio)))}" srcset="${esc(srcset(p, big ? [800, 1400, 2000] : [480, 800, 1200], ratio))}" sizes="${sizes}"
+               alt="${esc(v.brand + " " + v.model)}" loading="lazy" decoding="async"${v.pos && big ? ` style="object-position:${esc(v.pos)}"` : ""}>
+          ${(v.tags || []).length ? `<div class="card-tags">${v.tags.slice(0, 2).map(t => `<span class="tag">${esc(t)}</span>`).join("")}</div>` : ""}
+        </div>
+        ${prix(v)}
+        </div>
+        <div class="card-body">
+          <p class="card-brand">${esc(v.brand)}</p>
+          <h3 class="t-m card-model">${esc(v.model)}</h3>
+          <p class="card-version">${esc(v.version)}</p>
+          <ul class="specs">
+            <li>${v.year}</li><li>${nf.format(v.km)} km</li><li>${esc(v.fuel)}</li><li>${esc(v.box)}</li>
+          </ul>
+        </div>
+      </a>
+      <button class="fav" type="button" data-fav-id="${esc(v.id)}" aria-pressed="${Favs.has(v.id)}" aria-label="${Favs.has(v.id) ? "Retirer" : "Ajouter"} ${esc(v.brand + " " + v.model)} ${Favs.has(v.id) ? "de" : "à"} ma sélection">${HEART}</button>
+    </article>`;
+  }
+
+  function render() {
+    current = filtered();
+    const def = isDefault();
+    const rows = current.slice(0, state.shown);
+    if (!rows.length) {
+      grid.innerHTML = `<div class="empty">
+        <h3 class="t-m">${state.favOnly ? "Votre sélection est vide" : "Aucune voiture ne correspond"}</h3>
+        <p>${state.favOnly ? "Touchez le cœur d'une voiture pour la retrouver ici." : "Élargissez le budget ou retirez un filtre. Le garage a d'autres véhicules en stock : appelez pour une recherche précise."}</p>
+        <button class="btn btn--encre btn--s" type="button" data-reset>${state.favOnly ? "Voir tout le catalogue" : "Effacer les filtres"}</button>
+      </div>`;
+    } else {
+      grid.innerHTML = rows.map((v, k) => card(v, def && k === 0)).join("");
+    }
+    const n = current.length;
+    count.innerHTML = `<strong>${n}</strong> ${n > 1 ? "véhicules" : "véhicule"}${def ? " dans cette sélection" : ""}${def ? "" : `<button type="button" data-reset>Effacer les filtres</button>`}`;
+    more.hidden = n <= state.shown;
+    if (!more.hidden) $("#moreBtn").textContent = `Afficher les ${n - state.shown} autres véhicules`;
+    renderChips();
+  }
+  function reset() {
+    state.cat = "tous"; state.favOnly = false; state.shown = CONFIG.pageSize;
+    q.value = ""; fBrand.value = ""; fBudget.value = ""; fFuel.value = ""; fBox.value = ""; fSort.value = "";
+    render();
+  }
+
+  [q, fBrand, fBudget, fFuel, fBox, fSort].forEach(el => el.addEventListener("input", () => { state.shown = CONFIG.pageSize; render(); }));
+  chips.addEventListener("click", e => {
+    const b = e.target.closest(".chip"); if (!b) return;
+    if (b.hasAttribute("data-fav")) state.favOnly = !state.favOnly;
+    else { state.favOnly = false; state.cat = b.dataset.cat; }
+    state.shown = CONFIG.pageSize;
+    const key = b.hasAttribute("data-fav") ? "[data-fav]" : `[data-cat="${b.dataset.cat}"]`;
+    render();
+    const again = $(key, chips); if (again) again.focus();
+  });
+  $("#moreBtn").addEventListener("click", () => { state.shown = Infinity; render(); });
+  document.addEventListener("click", e => {
+    if (e.target.closest("[data-reset]")) { reset(); return; }
+    const f = e.target.closest("[data-fav-id]");
+    if (f) {
+      e.preventDefault();
+      const id = f.dataset.favId, on = Favs.toggle(id), v = byId(id);
+      $$(`[data-fav-id="${id}"]`).forEach(b => {
+        b.setAttribute("aria-pressed", String(on));
+        if (b.classList.contains("fav")) b.setAttribute("aria-label", `${on ? "Retirer" : "Ajouter"} ${v.brand} ${v.model} ${on ? "de" : "à"} ma sélection`);
+        else b.lastChild.textContent = on ? " Retirer de ma sélection" : " Ajouter à ma sélection";
+      });
+      if (state.favOnly) render(); else renderChips();
+    }
+  });
+  grid.addEventListener("error", e => {
+    if (e.target.tagName === "IMG") { e.target.closest(".card-photo").classList.add("no-img"); e.target.remove(); }
+  }, true);
+
+  render();
+  return { list: () => (current.length ? current : VEHICLES) };
+})();
+
+/* =====================================================================
+   Fiche véhicule (ouverte par #voiture-<id>)
+   ===================================================================== */
+(function fiche() {
+  const dlg = $("#fiche"), body = $("#ficheBody"), pos = $("#fichePos");
+  let currentId = null, lastFocus = null;
+
+  function fill(v) {
+    const list = Catalogue.list(), idx = list.findIndex(x => x.id === v.id);
+    pos.textContent = idx >= 0 ? `Véhicule ${idx + 1} sur ${list.length}` : "Fiche véhicule";
+    const multi = v.photos.length > 1;
+    body.innerHTML = `
+      <div class="gal">
+        <div class="gal-main"><img id="galMain" src="${esc(photo(v.photos[0], 1400, 933))}" alt="${esc(v.brand + " " + v.model)}"></div>
+        ${multi ? `<div class="gal-thumbs">${v.photos.slice(0, 4).map((p, k) =>
+          `<button type="button" data-k="${k}" aria-pressed="${k === 0}" aria-label="Photo ${k + 1}"><img src="${esc(photo(p, 320, 240))}" alt="" loading="lazy"></button>`).join("")}</div>` : ""}
+        <p class="gal-note">Photos non contractuelles.</p>
+      </div>
+      <div class="info">
+        <p class="info-brand">${esc(v.brand)}</p>
+        <h2 class="t-l" id="ficheTitre">${esc(v.model)}</h2>
+        <p class="info-version">${esc(v.version)}</p>
+        ${prix(v)}
+        <p class="info-warranty">Prix TTC, garantie incluse. Reprise de votre véhicule possible.</p>
+        <dl>
+          <div><dt>Année</dt><dd>${v.year}</dd></div>
+          <div><dt>Kilométrage</dt><dd>${nf.format(v.km)} km</dd></div>
+          <div><dt>Énergie</dt><dd>${esc(v.fuel)}</dd></div>
+          <div><dt>Boîte</dt><dd>${esc(v.box)}</dd></div>
+          <div><dt>Catégorie</dt><dd>${esc(CAT_LABEL[v.cat] || "")}</dd></div>
+          <div><dt>Disponibilité</dt><dd>Visible au garage</dd></div>
+        </dl>
+        ${(v.equip || []).length ? `<h3>Équipements et suivi</h3><ul class="equip">${v.equip.map(x => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}
+        <div class="info-actions">
+          <button class="btn btn--rouge" type="button" data-essai="${esc(v.id)}">Réserver un essai</button>
+          ${TEL ? `<a class="btn btn--encre" href="${esc(TEL_HREF)}">${esc(CONFIG.phone)}</a>` : ""}
+        </div>
+        <div class="info-links">
+          <button type="button" data-fav-id="${esc(v.id)}" aria-pressed="${Favs.has(v.id)}"><span class="sr"></span>${Favs.has(v.id) ? " Retirer de ma sélection" : " Ajouter à ma sélection"}</button>
+          ${v.url ? `<a href="${esc(v.url)}" target="_blank" rel="noopener">Voir l'annonce complète</a>` : ""}
+        </div>
+      </div>`;
+    body.scrollTop = 0;
+  }
+  function open(id) {
+    const v = byId(id); if (!v) return;
+    currentId = id; fill(v);
+    if (!dlg.open) {
+      lastFocus = document.activeElement;
+      dlg.showModal ? dlg.showModal() : dlg.setAttribute("open", "");
+      dlg.focus();
+      document.body.classList.add("is-locked");
+    }
+  }
+  function close() {
+    if (dlg.open) dlg.close ? dlg.close() : dlg.removeAttribute("open");
+  }
+  function step(d) {
+    const list = Catalogue.list(), idx = list.findIndex(x => x.id === currentId);
+    const next = list[(idx + d + list.length) % list.length];
+    history.replaceState(null, "", "#voiture-" + next.id);
+    open(next.id);
+  }
+  dlg.addEventListener("close", () => {
+    document.body.classList.remove("is-locked");
+    currentId = null;
+    if (location.hash.startsWith("#voiture-")) history.replaceState(null, "", location.pathname + location.search + "#catalogue");
+    if (lastFocus && document.contains(lastFocus)) lastFocus.focus({ preventScroll: true });
+  });
+  dlg.addEventListener("click", e => { if (e.target === dlg) close(); });
+  dlg.addEventListener("keydown", e => {
+    if (e.key === "ArrowRight") step(1);
+    if (e.key === "ArrowLeft") step(-1);
+  });
+  $("#ficheClose").addEventListener("click", close);
+  $("#fichePrev").addEventListener("click", () => step(-1));
+  $("#ficheNext").addEventListener("click", () => step(1));
+  body.addEventListener("click", e => {
+    const t = e.target.closest(".gal-thumbs button");
+    if (t) {
+      const v = byId(currentId);
+      $("#galMain").src = photo(v.photos[Number(t.dataset.k)], 1400, 933);
+      $$(".gal-thumbs button", body).forEach(b => b.setAttribute("aria-pressed", String(b === t)));
+      return;
+    }
+    const es = e.target.closest("[data-essai]");
+    if (es) {
+      const v = byId(es.dataset.essai);
+      lastFocus = null; close();
+      $("#f-sujet").value = "Un essai";
+      $("#f-msg").value = `Bonjour, je souhaite essayer la ${v.brand} ${v.model} ${v.version} (${v.year}, ${nf.format(v.km)} km) affichée à ${nf.format(v.price)} €.`;
+      $("#demande").scrollIntoView();
+      setTimeout(() => $("#f-nom").focus({ preventScroll: true }), 500);
+    }
+  });
+  function fromHash() {
+    const m = location.hash.match(/^#voiture-(.+)$/);
+    if (m) open(decodeURIComponent(m[1])); else close();
+  }
+  window.addEventListener("hashchange", fromHash);
+  fromHash();
+})();
+
+/* =====================================================================
+   Instagram : flux en direct si configuré, sinon photos du catalogue
+   ===================================================================== */
+(function instagram() {
+  const grid = $("#igGrid");
+  function fallback() {
+    grid.innerHTML = IG_FALLBACK.map(([p, id]) => {
+      const v = byId(id); if (!v) return "";
+      return `<a class="ig-tile" href="${esc(IG_URL || "#voiture-" + v.id)}"${IG_URL ? ' target="_blank" rel="noopener"' : ""}>
+        <img src="${esc(photo(p, 600, 600))}" alt="${esc(v.brand + " " + v.model)}" loading="lazy">
+        <span>${IG_URL ? "Voir sur Instagram" : esc(v.brand + " " + v.model)}</span></a>`;
+    }).join("");
+  }
+  function live(posts) {
+    const html = posts.slice(0, 6).map(p => {
+      const src = (p.sizes && p.sizes.medium && p.sizes.medium.mediaUrl) || p.thumbnailUrl || p.mediaUrl;
+      const alt = (p.prunedCaption || p.caption || "Publication Instagram de Muizon Automobiles").slice(0, 120);
+      return src ? `<a class="ig-tile" href="${esc(p.permalink || IG_URL)}" target="_blank" rel="noopener"><img src="${esc(src)}" alt="${esc(alt)}" loading="lazy"><span>Voir sur Instagram</span></a>` : "";
+    }).join("");
+    if (html) grid.innerHTML = html;
+  }
+  fallback();
+  if (!CONFIG.instagramFeedUrl || !IG_URL) return;
+  fetch(CONFIG.instagramFeedUrl)
+    .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(d => { const posts = Array.isArray(d) ? d : (d.posts || []); if (posts.length) live(posts); })
+    .catch(err => console.warn("Flux Instagram indisponible, photos du catalogue affichées.", err));
+})();
+
+/* =====================================================================
+   Formulaire
+   ===================================================================== */
+(function form() {
+  const f = $("#askForm"), note = $("#formNote");
+  const say = (msg, cls) => { note.textContent = msg; note.className = "form-note " + (cls || ""); };
+  $$("[data-subject]").forEach(a => a.addEventListener("click", () => { $("#f-sujet").value = a.dataset.subject; }));
+  f.addEventListener("submit", async e => {
+    e.preventDefault();
+    if (!f.checkValidity()) { say("Indiquez votre nom, votre téléphone et votre message.", "is-err"); f.reportValidity(); return; }
+    const data = Object.fromEntries(new FormData(f).entries());
+    if (CONFIG.formEndpoint) {
+      say("Envoi en cours…");
+      try {
+        const r = await fetch(CONFIG.formEndpoint, { method: "POST", headers: { "Content-Type": "application/json", "Accept": "application/json" }, body: JSON.stringify(data) });
+        if (!r.ok) throw new Error(r.status);
+        f.reset(); say("Demande envoyée. Le garage vous rappelle pendant les heures d'ouverture.", "is-ok");
+      } catch (err) { say("L'envoi n'a pas abouti. Réessayez ou appelez le garage.", "is-err"); }
+    } else if (CONFIG.email) {
+      const text = `Nom : ${data.nom}\nTéléphone : ${data.telephone}\nDemande : ${data.sujet}\n\n${data.message}`;
+      location.href = "mailto:" + CONFIG.email + "?subject=" + encodeURIComponent("Demande depuis le site : " + data.sujet) + "&body=" + encodeURIComponent(text);
+      say("Votre messagerie s'ouvre avec la demande prête à envoyer.", "is-ok");
+    } else {
+      console.warn("Formulaire non relié : renseigner CONFIG.formEndpoint ou CONFIG.email.");
+      say("L'envoi en ligne n'est pas encore disponible. Passez au garage, 31 Route Nationale à Muizon.", "is-err");
+    }
+  });
+})();
+
+/* =====================================================================
+   En-tête, menu mobile, mentions légales
+   ===================================================================== */
+(function chrome() {
+  const top = $("#top"), burger = $("#burger"), menu = $("#menu");
+  const stick = () => top.classList.toggle("is-stuck", window.scrollY > 40);
+  stick(); window.addEventListener("scroll", stick, { passive: true });
+
+  const setMenu = open => {
+    menu.hidden = !open;
+    burger.setAttribute("aria-expanded", String(open));
+    burger.setAttribute("aria-label", open ? "Fermer le menu" : "Ouvrir le menu");
+    document.body.classList.toggle("is-locked", open);
+  };
+  burger.addEventListener("click", () => setMenu(menu.hidden));
+  menu.addEventListener("click", e => { if (e.target.closest("a")) setMenu(false); });
+  window.addEventListener("keydown", e => { if (e.key === "Escape" && !menu.hidden) setMenu(false); });
+
+  const legal = $("#legal");
+  $("#legalOpen").addEventListener("click", () => legal.showModal ? legal.showModal() : legal.setAttribute("open", ""));
+  $("#legalClose").addEventListener("click", () => legal.close ? legal.close() : legal.removeAttribute("open"));
+})();
+</script>
+</body>
+</html>
