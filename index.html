@@ -197,7 +197,7 @@ html.js.intro-on .intro{display:block}
 ------------------------------------------------------------------- */
 .hero{position:relative;min-height:max(100svh,700px);display:flex;flex-direction:column;justify-content:flex-end;color:#fff;background:var(--nuit);overflow:hidden}
 .hero-media{position:absolute;inset:0}
-.hero-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1s ease}
+.hero-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:var(--pos,50% 50%);opacity:0;transition:opacity 1s ease}
 .hero-media img.is-on{opacity:1}
 .hero::after{
   content:"";position:absolute;inset:0;pointer-events:none;
@@ -210,9 +210,9 @@ html.js.intro-on .intro{display:block}
 .hero-sub{margin-top:clamp(16px,2.4vh,26px);max-width:34em;font-size:clamp(1.02rem,1.25vw,1.18rem);color:#DDE2E8}
 .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:clamp(22px,3.4vh,34px)}
 
-.une{width:min(370px,100%);background:rgba(12,17,24,.66);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.16);border-radius:16px;padding:20px 22px 20px}
-.une-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}
-.une-label{font-size:14px;font-weight:600;color:var(--jaune)}
+.une{width:370px;max-width:100%;background:rgba(12,17,24,.66);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.16);border-radius:16px;padding:20px 22px 20px}
+.une-info{display:grid;grid-template-columns:minmax(0,1fr)}
+.une-label{font-size:14px;font-weight:600;color:var(--jaune);margin-bottom:12px}
 .une-nav{display:flex;align-items:center;gap:8px;font-stretch:75%;font-weight:600;font-size:16px;font-variant-numeric:tabular-nums;color:#C6CDD6}
 .une-nav button{width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,255,255,.3);display:inline-flex;align-items:center;justify-content:center;color:#fff;transition:background-color .2s,color .2s}
 .une-nav button:hover{background:#fff;color:var(--encre)}
@@ -220,8 +220,8 @@ html.js.intro-on .intro{display:block}
 .une-brand{font-size:14.5px;font-weight:600;color:#B4BCC7}
 .une-model{margin-top:2px}
 .une-specs{margin-top:8px;font-stretch:80%;font-weight:500;font-size:17px;color:#DDE2E8}
-.une-foot{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-top:18px}
-.une .prix{font-size:1.75rem}
+.une .prix{font-size:1.75rem;justify-self:start;margin-top:16px}
+.une-ctrl{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:20px}
 
 .hero-facts{position:relative;z-index:2;border-top:1px solid rgba(255,255,255,.16)}
 .hero-facts ul{display:flex;flex-wrap:wrap}
@@ -452,7 +452,29 @@ html.js:not(.ready) .hero-copy,html.js:not(.ready) .une,html.js:not(.ready) .her
   .card--big .card-media{display:block}
   .card--big .card-photo{aspect-ratio:16/9;min-height:0}
   .ig-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
-  .hero-in{grid-template-columns:1fr}
+  .hero{--mh:max(60svh,420px);display:block;min-height:0}
+  .hero::after{display:none}
+  .hero-media{position:relative;inset:auto;height:var(--mh)}
+  .hero-media img{object-position:var(--pos-m,var(--pos,50% 50%))}
+  .hero-media::after{content:"";position:absolute;inset:0;pointer-events:none;background:
+    linear-gradient(180deg,rgba(12,17,24,.6) 0,rgba(12,17,24,0) 120px),
+    linear-gradient(0deg,var(--nuit) 0,rgba(12,17,24,.82) 14%,rgba(12,17,24,.35) 32%,rgba(12,17,24,0) 48%)}
+  .hero-in{position:static;display:flex;flex-direction:column;align-items:stretch;gap:0;padding-block:0 28px}
+  .une{order:-1;width:100%;background:none;border:0;border-radius:0;padding:0;backdrop-filter:none;-webkit-backdrop-filter:none}
+  .une-info{position:absolute;z-index:3;left:var(--gutter);right:var(--gutter);top:var(--mh);transform:translateY(-100%);padding-bottom:6px;
+    grid-template-columns:minmax(0,1fr) auto;column-gap:14px;align-items:end}
+  .une-label{grid-column:1/-1;margin-bottom:6px}
+  .une-brand,.une-model,.une-specs{grid-column:1}
+  .une-model{font-size:1.65rem}
+  .une-specs{margin-top:6px;font-size:16px}
+  .une .prix{grid-column:2;grid-row:2/5;align-self:end;justify-self:end;margin:0 2px 4px 0;font-size:1.7rem}
+  .une-ctrl{margin-top:16px}
+  .une-ctrl .btn{flex:1}
+  .une-nav button{width:48px;height:48px}
+  .hero-copy{margin-top:34px}
+  .hero h1{font-size:clamp(1.85rem,8.4vw,2.6rem)}
+  .hero-actions .btn--clair{display:none}
+  .hero-facts{margin-top:4px}
   .fiche-body{grid-template-columns:1fr}
 }
 @media (max-width:760px){
@@ -460,13 +482,9 @@ html.js:not(.ready) .hero-copy,html.js:not(.ready) .une,html.js:not(.ready) .her
   section[id],#demande{scroll-margin-top:64px}
   .top-in{height:64px}
   .top-cta .btn{display:none}
-  .hero{min-height:max(100svh,760px)}
-  .hero-in{padding-top:110px}
-  .hero::after{background:linear-gradient(0deg,rgba(12,17,24,.97) 0%,rgba(12,17,24,.9) 48%,rgba(12,17,24,.62) 78%,rgba(12,17,24,.5) 100%)}
   .hero-actions .btn{flex:1 1 100%}
-  .une{width:100%}
   .hero-facts li{border-right:0;margin-right:0;padding:10px 0;width:100%;border-bottom:1px solid rgba(255,255,255,.12)}
-  .hero-facts li:last-child{border-bottom:0;padding-bottom:calc(74px + env(safe-area-inset-bottom))}
+  .hero-facts li:last-child{border-bottom:0;padding-bottom:22px}
   .tools{grid-template-columns:repeat(2,minmax(0,1fr))}
   .chips{flex-wrap:nowrap;overflow-x:auto;margin-inline:calc(var(--gutter) * -1);padding-inline:var(--gutter);scrollbar-width:none;max-width:100vw}
   .chips::-webkit-scrollbar{display:none}
@@ -863,6 +881,7 @@ const CONFIG = {
 
 /* =====================================================================
    VÉHICULES
+   pos / posMobile : cadrage de la photo dans le hero (ordinateur / téléphone), ex. "36% 60%".
    photos : identifiants Unsplash (images d'illustration) OU URL complètes / chemins
             locaux (ex. "/photos/touareg-1.jpg"). La première sert de vignette.
    demo: true  = fiche inventée pour la maquette (modèle présent dans les marques
@@ -873,7 +892,7 @@ const CONFIG = {
 const VEHICLES = [
   { id:"touareg", cat:"suv", brand:"Volkswagen", model:"Touareg", version:"3.0 V6 TDI R-Line", year:2016, km:121500, fuel:"Diesel", box:"Automatique", price:26980,
     tags:["Première main"], equip:["Première main","Suivi d'entretien","Attelage","Finition R-Line","V6 TDI"],
-    photos:["1655125911408-6ad111380354","1655125910044-9969c01063ad","1655125911732-59048da6dbfa","1655125910638-8b582f37840f"], hero:"1655125910044-9969c01063ad", pos:"50% 62%",
+    photos:["1655125911408-6ad111380354","1655125910044-9969c01063ad","1655125911732-59048da6dbfa","1655125910638-8b582f37840f"], hero:"1655125910044-9969c01063ad", pos:"50% 62%", posMobile:"20% 62%",
     url:"https://occasion.largus.fr/auto/annonce-9eb0a770-d2bf-4e29-a8a7-41944d661817-volkswagen-touareg-2016-121500km", demo:false },
   { id:"z4", cat:"plaisir", brand:"BMW", model:"Z4 Roadster", version:"3.0si 265 ch Pack M", year:2006, km:114736, fuel:"Essence", box:"Manuelle", price:23980,
     tags:["Cabriolet"], equip:["Pack M","Volant M","Sièges électriques","Suivi d'entretien","6 cylindres 265 ch"],
@@ -884,7 +903,7 @@ const VEHICLES = [
     photos:["1665857013224-9540a447216b","1665856999901-180960454ceb"], demo:true },
   { id:"a6", cat:"famille", brand:"Audi", model:"A6", version:"2.0 TDI 190 S tronic Avus", year:2016, km:148200, fuel:"Diesel", box:"Automatique", price:17980,
     tags:["Boîte auto"], equip:["Cuir","GPS MMI","Phares LED","Sièges chauffants","Suivi Audi"],
-    photos:["1572199109282-442d26b37fa6"], pos:"50% 70%", demo:true },
+    photos:["1572199109282-442d26b37fa6"], pos:"50% 70%", posMobile:"62% 70%", demo:true },
   { id:"evoque", cat:"suv", brand:"Land Rover", model:"Range Rover Evoque", version:"2.0 TD4 150 SE Dynamic", year:2016, km:134000, fuel:"Diesel", box:"Automatique", price:17480,
     tags:["4 roues motrices"], equip:["4 roues motrices","Toit panoramique","Cuir","Caméra de recul","GPS"],
     photos:["1658547737133-18ff87807de7"], demo:true },
@@ -903,7 +922,7 @@ const VEHICLES = [
     photos:["1656947874545-075c9b00f44c","1679932187595-1dc665b19f0e"], demo:true },
   { id:"renegade", cat:"suv", brand:"Jeep", model:"Renegade", version:"1.6 MultiJet 120 Longitude", year:2017, km:108500, fuel:"Diesel", box:"Manuelle", price:12980,
     tags:["Barres de toit"], equip:["Barres de toit","GPS","Régulateur","Radar de recul"],
-    photos:["1609608934835-80cfd2eaf62a","1609608933706-8dd81d8d3975","1609608934025-c9414a01d245"], hero:"1609608933706-8dd81d8d3975", pos:"35% 60%", demo:true },
+    photos:["1609608934835-80cfd2eaf62a","1609608933706-8dd81d8d3975","1609608934025-c9414a01d245"], hero:"1609608933706-8dd81d8d3975", pos:"35% 60%", posMobile:"33% 60%", demo:true },
   { id:"duster", cat:"suv", brand:"Dacia", model:"Duster", version:"dCi 4x4 Prestige Edition", year:2016, km:124425, fuel:"Diesel", box:"Manuelle", price:12480,
     tags:["4 roues motrices"], equip:["4 roues motrices","Snorkel","Rampe LED","Finition Prestige"],
     photos:["1653293558800-173e50a81b97"],
@@ -1157,9 +1176,12 @@ const Favs = (() => {
     const im = new Image();
     const src = v.hero || v.photos[0];
     im.alt = ""; im.decoding = "async";
-    im.style.objectPosition = v.pos || "50% 50%";
-    if (k === 0) { im.src = photo(src, 2000, 1250); im.fetchPriority = "high"; }
-    else im.dataset.src = photo(src, 2000, 1250);
+    if (v.pos) im.style.setProperty("--pos", v.pos);
+    if (v.posMobile) im.style.setProperty("--pos-m", v.posMobile);
+    im.sizes = "(max-width:760px) 170vw, 100vw";
+    const set = srcset(src, [1000, 1600, 2000], 0.625);
+    if (k === 0) { if (set) im.srcset = set; im.src = photo(src, 2000, 1250); im.fetchPriority = "high"; }
+    else { im.dataset.src = photo(src, 2000, 1250); im.dataset.srcset = set; }
     media.appendChild(im);
     return im;
   });
@@ -1168,24 +1190,27 @@ const Favs = (() => {
     i = (n + list.length) % list.length;
     const v = list[i];
     imgs.forEach((im, k) => {
-      if (k === i && im.dataset.src) { im.src = im.dataset.src; delete im.dataset.src; }
+      if (k === i && im.dataset.src) {
+        if (im.dataset.srcset) im.srcset = im.dataset.srcset;
+        im.src = im.dataset.src; delete im.dataset.src; delete im.dataset.srcset;
+      }
       im.classList.toggle("is-on", k === i);
     });
     box.innerHTML = `
-      <div class="une-top">
+      <div class="une-info">
         <span class="une-label">À la une cette semaine</span>
+        <p class="une-brand">${esc(v.brand)}</p>
+        <h2 class="t-m une-model">${esc(v.model)}</h2>
+        <p class="une-specs">${v.year}, ${nf.format(v.km)} km, ${esc(v.fuel.toLowerCase())}, ${esc(v.box.toLowerCase())}</p>
+        ${prix(v)}
+      </div>
+      <div class="une-ctrl">
+        <a class="btn btn--blanc btn--s" href="#voiture-${esc(v.id)}">Voir la fiche</a>
         ${list.length > 1 ? `<span class="une-nav">
           <button type="button" data-dir="-1" aria-label="Véhicule à la une précédent">${ARROW("m15 18-6-6 6-6")}</button>
           <span aria-hidden="true">${i + 1} / ${list.length}</span>
           <button type="button" data-dir="1" aria-label="Véhicule à la une suivant">${ARROW("m9 18 6-6-6-6")}</button>
         </span>` : ""}
-      </div>
-      <p class="une-brand">${esc(v.brand)}</p>
-      <h2 class="t-m une-model">${esc(v.model)}</h2>
-      <p class="une-specs">${v.year}, ${nf.format(v.km)} km, ${esc(v.fuel.toLowerCase())}, ${esc(v.box.toLowerCase())}</p>
-      <div class="une-foot">
-        ${prix(v)}
-        <a class="btn btn--blanc btn--s" href="#voiture-${esc(v.id)}">Voir la fiche</a>
       </div>`;
   }
   box.addEventListener("click", e => {
@@ -1193,6 +1218,15 @@ const Favs = (() => {
     show(i + Number(b.dataset.dir));
     const again = $(`[data-dir="${b.dataset.dir}"]`, box); if (again) again.focus();
   });
+  // Balayage au doigt sur la photo pour changer de véhicule
+  let x0 = null, y0 = null;
+  media.addEventListener("touchstart", e => { x0 = e.touches[0].clientX; y0 = e.touches[0].clientY; }, { passive: true });
+  media.addEventListener("touchend", e => {
+    if (x0 === null || list.length < 2) return;
+    const dx = e.changedTouches[0].clientX - x0, dy = e.changedTouches[0].clientY - y0;
+    if (Math.abs(dx) > 45 && Math.abs(dx) > Math.abs(dy) * 1.5) show(i + (dx < 0 ? 1 : -1));
+    x0 = null;
+  }, { passive: true });
   show(0);
 })();
 
